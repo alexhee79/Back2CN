@@ -255,6 +255,7 @@ proxy-groups:
       - 🇨🇳 CN 8｜openit.ml
       - 🇨🇳 CN 9｜openit.ml
       - 🇭🇰 HK 1｜openit.ml
+      - HK 417
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -284,6 +285,7 @@ proxy-groups:
       - 🇨🇳 CN 8｜openit.ml
       - 🇨🇳 CN 9｜openit.ml
       - 🇭🇰 HK 1｜openit.ml
+      - HK 417
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -320,6 +322,7 @@ proxy-groups:
       - 🇨🇳 CN 8｜openit.ml
       - 🇨🇳 CN 9｜openit.ml
       - 🇭🇰 HK 1｜openit.ml
+      - HK 417
   - name: 👉 国内网站
     type: select
     proxies:
