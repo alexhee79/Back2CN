@@ -33,187 +33,35 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
-  - name: 🇨🇳 CN 10｜openit.ml
-    server: 120.233.187.199
-    port: 20001
-    type: trojan
-    password: 46d4e24d-e653-3d67-b773-54f43d1e89e7
-    sni: node.franxx.codes
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 11｜openit.ml
-    server: 120.233.187.199
-    port: 20004
-    type: trojan
-    password: 46d4e24d-e653-3d67-b773-54f43d1e89e7
-    sni: node.franxx.codes
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 12｜openit.ml
-    server: 116.129.253.128
-    port: 20010
-    type: trojan
-    password: 46d4e24d-e653-3d67-b773-54f43d1e89e7
-    sni: node.franxx.codes
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 13｜openit.ml
-    server: 120.233.187.199
-    port: 20014
-    type: trojan
-    password: 46d4e24d-e653-3d67-b773-54f43d1e89e7
-    sni: node.franxx.codes
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 14｜openit.ml
-    server: 116.129.253.128
-    port: 20006
-    type: trojan
-    password: 46d4e24d-e653-3d67-b773-54f43d1e89e7
-    sni: node.franxx.codes
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 15｜openit.ml
-    server: hnyd.52147.top
-    port: 30080
-    type: trojan
-    password: 52a98419-efab-4c34-b4cc-4e2a7bc37029
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 16｜openit.ml
-    server: 120.233.187.199
-    port: 20013
-    type: trojan
-    password: 46d4e24d-e653-3d67-b773-54f43d1e89e7
-    sni: node.franxx.codes
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 17｜openit.ml
-    server: 116.129.253.128
-    port: 20009
-    type: trojan
-    password: 46d4e24d-e653-3d67-b773-54f43d1e89e7
-    sni: node.franxx.codes
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 18｜openit.ml
-    server: 116.129.253.128
-    port: 20005
-    type: trojan
-    password: 46d4e24d-e653-3d67-b773-54f43d1e89e7
-    sni: node.franxx.codes
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 19｜openit.ml
-    server: 116.129.253.128
-    port: 20003
-    type: trojan
-    password: 46d4e24d-e653-3d67-b773-54f43d1e89e7
-    sni: node.franxx.codes
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 1｜openit.ml
-    server: cm.spacez.cloud
-    port: 30003
-    type: trojan
-    password: c9a3a61d-5d49-4158-9e60-6fa32684b122
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 20｜openit.ml
-    server: gzyd1.52147.top
-    port: 30170
-    type: trojan
-    password: 52a98419-efab-4c34-b4cc-4e2a7bc37029
-    sni: gzyd1.52147.top
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 21｜openit.ml
-    server: 116.129.253.128
-    port: 20007
-    type: trojan
-    password: 46d4e24d-e653-3d67-b773-54f43d1e89e7
-    sni: node.franxx.codes
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 22｜openit.ml
-    server: gzyd2.52147.top
-    port: 20110
-    type: trojan
-    password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6
-    sni: huayun.xyz
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 2｜openit.ml
-    server: hnyd.52147.top
-    port: 20160
-    type: trojan
-    password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6
-    sni: huayun.xyz
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 3｜openit.ml
-    server: hnyd.52147.top
-    port: 30170
-    type: trojan
-    password: 52a98419-efab-4c34-b4cc-4e2a7bc37029
-    sni: hnyd.52147.top
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 4｜openit.ml
-    server: hnyd.52147.top
-    port: 30120
-    type: trojan
-    password: 52a98419-efab-4c34-b4cc-4e2a7bc37029
-    sni: hnyd.52147.top
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 5｜openit.ml
-    server: hnyd.52147.top
-    port: 30130
-    type: trojan
-    password: 52a98419-efab-4c34-b4cc-4e2a7bc37029
-    sni: hnyd.52147.top
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 6｜openit.ml
-    server: hnyd.52147.top
-    port: 20120
-    type: trojan
-    password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6
-    sni: huayun.xyz
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 7｜openit.ml
-    server: gzyd2.52147.top
-    port: 20120
-    type: trojan
-    password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6
-    sni: huayun.xyz
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 8｜openit.ml
-    server: hnyd.52147.top
-    port: 20110
-    type: trojan
-    password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6
-    sni: huayun.xyz
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 CN 9｜openit.ml
-    server: gzyd2.52147.top
-    port: 30170
-    type: trojan
-    password: 52a98419-efab-4c34-b4cc-4e2a7bc37029
-    sni: gzyd2.52147.top
-    skip-cert-verify: true
-    udp: true
-  - name: 🇭🇰 HK 1｜openit.ml
-    server: tj-hk01.yiyodns.xyz
-    port: 443
-    type: trojan
-    password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
-    skip-cert-verify: true
-    udp: true
+  - {name: 🇨🇳 CN 10｜openit.ml, server: 103.56.62.145, port: 3381, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 11｜openit.ml, server: dx.yhy520.xyz, port: 58821, type: trojan, password: cb0a815b-c6e5-35ba-8dbc-be884c5f24ec, sni: soolos.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 12｜openit.ml, server: gx3.mayiyun.shop, port: 10014, type: ss, cipher: aes-256-gcm, password: 2fd060fa-5c95-4abe-9d45-66a0ca8a82c8, udp: true}
+  - {name: 🇨🇳 CN 13｜openit.ml, server: 103.56.62.145, port: 3381, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 14｜openit.ml, server: dx.yhy520.xyz, port: 58805, type: trojan, password: cb0a815b-c6e5-35ba-8dbc-be884c5f24ec, sni: soolos.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 15｜openit.ml, server: 103.56.62.145, port: 3381, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 16｜openit.ml, server: dx.yhy520.xyz, port: 58814, type: trojan, password: cb0a815b-c6e5-35ba-8dbc-be884c5f24ec, sni: soolos.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 17｜openit.ml, server: lt.yhy520.xyz, port: 58831, type: trojan, password: cb0a815b-c6e5-35ba-8dbc-be884c5f24ec, sni: soolos.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 18｜openit.ml, server: cnmddgjs.mayiyun.shop, port: 10017, type: ss, cipher: aes-256-gcm, password: 2fd060fa-5c95-4abe-9d45-66a0ca8a82c8, udp: true}
+  - {name: 🇨🇳 CN 19｜openit.ml, server: dx.yhy520.xyz, port: 58809, type: trojan, password: cb0a815b-c6e5-35ba-8dbc-be884c5f24ec, sni: soolos.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 1｜openit.ml, server: 116.129.253.128, port: 20010, type: trojan, password: 46d4e24d-e653-3d67-b773-54f43d1e89e7, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 20｜openit.ml, server: gx3.mayiyun.shop, port: 10015, type: ss, cipher: aes-256-gcm, password: 2fd060fa-5c95-4abe-9d45-66a0ca8a82c8, udp: true}
+  - {name: 🇨🇳 CN 21｜openit.ml, server: gx3.mayiyun.shop, port: 10018, type: ss, cipher: aes-256-gcm, password: 2fd060fa-5c95-4abe-9d45-66a0ca8a82c8, udp: true}
+  - {name: 🇨🇳 CN 22｜openit.ml, server: cnmddgjs.mayiyun.shop, port: 10021, type: ss, cipher: aes-256-gcm, password: 2fd060fa-5c95-4abe-9d45-66a0ca8a82c8, udp: true}
+  - {name: 🇨🇳 CN 23｜openit.ml, server: lt.yhy520.xyz, port: 58810, type: trojan, password: cb0a815b-c6e5-35ba-8dbc-be884c5f24ec, sni: soolos.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 24｜openit.ml, server: dx.yhy520.xyz, port: 58816, type: trojan, password: cb0a815b-c6e5-35ba-8dbc-be884c5f24ec, sni: soolos.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 25｜openit.ml, server: lt.yhy520.xyz, port: 58832, type: trojan, password: cb0a815b-c6e5-35ba-8dbc-be884c5f24ec, sni: soolos.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 26｜openit.ml, server: gy.acec.icu, port: 50034, type: ss, cipher: chacha20-ietf-poly1305, password: 893d27d4-02c5-41d2-a9d6-250d4cf3ac7a, udp: true}
+  - {name: 🇨🇳 CN 27｜openit.ml, server: lt.yhy520.xyz, port: 58819, type: trojan, password: cb0a815b-c6e5-35ba-8dbc-be884c5f24ec, sni: soolos.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 28｜openit.ml, server: 103.56.62.145, port: 3381, type: trojan, password: 711aabc21e45ae31, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 2｜openit.ml, server: 116.129.253.128, port: 20006, type: trojan, password: 46d4e24d-e653-3d67-b773-54f43d1e89e7, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 3｜openit.ml, server: 116.129.253.128, port: 20003, type: trojan, password: 46d4e24d-e653-3d67-b773-54f43d1e89e7, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 4｜openit.ml, server: 116.129.253.128, port: 20005, type: trojan, password: 46d4e24d-e653-3d67-b773-54f43d1e89e7, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 5｜openit.ml, server: 116.129.253.128, port: 20007, type: trojan, password: 46d4e24d-e653-3d67-b773-54f43d1e89e7, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 6｜openit.ml, server: 116.129.253.128, port: 20009, type: trojan, password: 46d4e24d-e653-3d67-b773-54f43d1e89e7, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 7｜openit.ml, server: 116.129.253.128, port: 20016, type: trojan, password: 46d4e24d-e653-3d67-b773-54f43d1e89e7, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 8｜openit.ml, server: lt.yhy520.xyz, port: 58819, type: trojan, password: cb0a815b-c6e5-35ba-8dbc-be884c5f24ec, sni: soolos.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 9｜openit.ml, server: lt.yhy520.xyz, port: 58827, type: trojan, password: cb0a815b-c6e5-35ba-8dbc-be884c5f24ec, sni: soolos.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 1｜openit.ml, server: tj-hk01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -239,6 +87,12 @@ proxy-groups:
       - 🇨🇳 CN 20｜openit.ml
       - 🇨🇳 CN 21｜openit.ml
       - 🇨🇳 CN 22｜openit.ml
+      - 🇨🇳 CN 23｜openit.ml
+      - 🇨🇳 CN 24｜openit.ml
+      - 🇨🇳 CN 25｜openit.ml
+      - 🇨🇳 CN 26｜openit.ml
+      - 🇨🇳 CN 27｜openit.ml
+      - 🇨🇳 CN 28｜openit.ml
       - 🇨🇳 CN 2｜openit.ml
       - 🇨🇳 CN 3｜openit.ml
       - 🇨🇳 CN 4｜openit.ml
@@ -268,6 +122,12 @@ proxy-groups:
       - 🇨🇳 CN 20｜openit.ml
       - 🇨🇳 CN 21｜openit.ml
       - 🇨🇳 CN 22｜openit.ml
+      - 🇨🇳 CN 23｜openit.ml
+      - 🇨🇳 CN 24｜openit.ml
+      - 🇨🇳 CN 25｜openit.ml
+      - 🇨🇳 CN 26｜openit.ml
+      - 🇨🇳 CN 27｜openit.ml
+      - 🇨🇳 CN 28｜openit.ml
       - 🇨🇳 CN 2｜openit.ml
       - 🇨🇳 CN 3｜openit.ml
       - 🇨🇳 CN 4｜openit.ml
@@ -304,6 +164,12 @@ proxy-groups:
       - 🇨🇳 CN 20｜openit.ml
       - 🇨🇳 CN 21｜openit.ml
       - 🇨🇳 CN 22｜openit.ml
+      - 🇨🇳 CN 23｜openit.ml
+      - 🇨🇳 CN 24｜openit.ml
+      - 🇨🇳 CN 25｜openit.ml
+      - 🇨🇳 CN 26｜openit.ml
+      - 🇨🇳 CN 27｜openit.ml
+      - 🇨🇳 CN 28｜openit.ml
       - 🇨🇳 CN 2｜openit.ml
       - 🇨🇳 CN 3｜openit.ml
       - 🇨🇳 CN 4｜openit.ml
