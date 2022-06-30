@@ -214,7 +214,14 @@ proxies:
     password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
     skip-cert-verify: true
     udp: true
-proxy-groups:
+  - name: 🇭🇰 HK 2｜openit.ml
+    server: 104.208.77.38
+    port: 12369
+    type: trojan
+    password: 9ff4a104-d00e-4867-96e7-6f5f63070005
+    sni: 20-187-95-105.nhost.00cdn.com
+    skip-cert-verify: true
+    udp: true
   - name: 🌐 节点选择
     type: select
     proxies:
@@ -248,6 +255,7 @@ proxy-groups:
       - 🇨🇳 CN 8｜openit.ml
       - 🇨🇳 CN 9｜openit.ml
       - 🇭🇰 HK 1｜openit.ml
+      - 🇭🇰 HK 2｜openit.ml
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -277,6 +285,7 @@ proxy-groups:
       - 🇨🇳 CN 8｜openit.ml
       - 🇨🇳 CN 9｜openit.ml
       - 🇭🇰 HK 1｜openit.ml
+      - 🇭🇰 HK 2｜openit.ml
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -284,6 +293,7 @@ proxy-groups:
     tolerance: 100
     proxies:
      - 🇭🇰 HK 1｜openit.ml
+     - 🇭🇰 HK 2｜openit.ml
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -313,6 +323,7 @@ proxy-groups:
       - 🇨🇳 CN 8｜openit.ml
       - 🇨🇳 CN 9｜openit.ml
       - 🇭🇰 HK 1｜openit.ml
+      - 🇭🇰 HK 2｜openit.ml
   - name: 👉 国内网站
     type: select
     proxies:
