@@ -214,6 +214,13 @@ proxies:
     password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
     skip-cert-verify: true
     udp: true
+  - name: HK 417
+    server: 148.66.56.99
+    port: 810
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: G!yBwPWH3Vao
+    udp: true
 proxy-groups:
   - name: 🌐 节点选择
     type: select
