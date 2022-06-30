@@ -214,6 +214,7 @@ proxies:
     password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
     skip-cert-verify: true
     udp: true
+proxy-groups:
   - name: 🌐 节点选择
     type: select
     proxies:
