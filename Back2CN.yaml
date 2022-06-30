@@ -284,7 +284,6 @@ proxy-groups:
     tolerance: 100
     proxies:
      - 🇭🇰 HK 1｜openit.ml
-     - HK 417
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
