@@ -33,56 +33,28 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
-  - {name: CN 01, server: 1.hk.zz.xxxxx.x-t-fuckword.network, port: 36672, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 02, server: 7.hk.zz.xxxxx.x-t-fuckword.network, port: 58416, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 03, server: word.18.fuckword.club, port: 58417, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 04, server: word.10.1.fuckword.club, port: 20001, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 05, server: 5.hk.zz.xxxxx.x-t-fuckword.network, port: 36690, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 06, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 07, server: bj1.xlao.cn, port: 30002, type: vmess, uuid: e2c86473-d07c-41db-b627-4820539c67eb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
-  - {name: CN 08, server: 1.5.1.fuckppppp.today, port: 50010, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 09, server: 1.sg.zz.xxxxx.x-t-fuckword.network, port: 36674, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 10, server: word.13.1.fuckword.club, port: 53127, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 11, server: tw1.v3.zz.cn.fuckword.club, port: 49111, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 12, server: bj1.xlao.cn, port: 30008, type: vmess, uuid: 5999692f-a9c4-4744-b051-92035b988317, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
-  - {name: CN 13, server: bj1.xlao.cn, port: 30008, type: vmess, uuid: e2c86473-d07c-41db-b627-4820539c67eb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
-  - {name: CN 14, server: bj1.xlao.cn, port: 30009, type: vmess, uuid: 5999692f-a9c4-4744-b051-92035b988317, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
-  - {name: CN 15, server: bj1.xlao.cn, port: 30009, type: vmess, uuid: e2c86473-d07c-41db-b627-4820539c67eb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
-  - {name: CN 16, server: 2.sg.zz.xxxxx.x-t-fuckword.network, port: 60301, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 17, server: bj1.xlao.cn, port: 30001, type: vmess, uuid: e2c86473-d07c-41db-b627-4820539c67eb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
-  - {name: CN 18, server: bj1.xlao.cn, port: 30004, type: vmess, uuid: e2c86473-d07c-41db-b627-4820539c67eb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
-  - {name: CN 19, server: 2.jp.zz.xxxxx.x-t-fuckword.network, port: 36671, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 20, server: hk2.v3.zz.cn.fuckword.club, port: 47835, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 21, server: bj1.xlao.cn, port: 30007, type: vmess, uuid: e2c86473-d07c-41db-b627-4820539c67eb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
-  - {name: CN 22, server: hk1.v2.zz.cn.fuckword.club, port: 49511, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 23, server: hk2.v2.zz.cn.fuckword.club, port: 49112, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 24, server: bj1.xlao.cn, port: 30006, type: vmess, uuid: 5999692f-a9c4-4744-b051-92035b988317, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
-  - {name: CN 25, server: bj1.xlao.cn, port: 30006, type: vmess, uuid: e2c86473-d07c-41db-b627-4820539c67eb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
-  - {name: CN 26, server: 3.4.1.fuckppppp.today, port: 49126, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 27, server: lt.yhy520.xyz, port: 58827, type: trojan, password: 68ff1a36-955f-3438-9c20-f9eddf8d5058, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 28, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 29, server: bj1.xlao.cn, port: 30001, type: vmess, uuid: 5999692f-a9c4-4744-b051-92035b988317, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
-  - {name: CN 30, server: 1.us.zz.xxxxx.x-t-fuckword.network, port: 36677, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 31, server: 1.6.1.fuckppppp.today, port: 49127, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 32, server: 3.6.1.fuckppppp.today, port: 49125, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 33, server: word.4.1.fuckword.club, port: 49121, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 34, server: 2.hk.zz.xxxxx.x-t-fuckword.network, port: 35419, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 35, server: 2.7.1.fuckppppp.today, port: 50002, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 36, server: hkt01.hk.zz.xxxxx.x-t-fuckword.network, port: 56812, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 37, server: 3.8.1.fuckppppp.today, port: 53125, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 38, server: sg2.v3.zz.cn.fuckword.club, port: 47534, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 39, server: word.12.1.fuckword.club, port: 48744, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true} 
-  - {name: CN 40, server: 2.3.1.fuckppppp.today, port: 50000, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 41, server: bj1.xlao.cn, port: 30007, type: vmess, uuid: 5999692f-a9c4-4744-b051-92035b988317, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /live, ws-headers: {Host: cctv.com}, udp: true}
-  - {name: CN 42, server: ftp.cn.debian.cdnet.in, port: 8040, type: ss, cipher: aes-128-gcm, password: 888ba77d-38d3-4b9a-bda3-ab639885e8b8, udp: true}
-  - {name: CN 43, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 44, server: 1.tw.zz.xxxxx.x-t-fuckword.network, port: 53137, type: vmess, uuid: 190615c3-f3a6-3c69-ae20-fbbc362c647d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 01, server: gzyd1.52147.top, port: 20060, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 02, server: gzyd1.52147.top, port: 30120, type: trojan, password: 52a98419-efab-4c34-b4cc-4e2a7bc37029, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 03, server: hnyd.52147.top, port: 30120, type: trojan, password: 52a98419-efab-4c34-b4cc-4e2a7bc37029, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 04, server: hnyd.52147.top, port: 30080, type: trojan, password: 52a98419-efab-4c34-b4cc-4e2a7bc37029, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 05, server: hnyd.52147.top, port: 20110, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 06, server: hnyd.52147.top, port: 49871, type: ss, cipher: chacha20-ietf-poly1305, password: 52a98419-efab-4c34-b4cc-4e2a7bc37029, udp: true}
+  - {name: CN 07, server: hnyd.52147.top, port: 49870, type: ss, cipher: chacha20-ietf-poly1305, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, udp: true}
+  - {name: CN 08, server: 14.29.124.168, port: 24005, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 09, server: mlxy-zf.jiashumao.net, port: 27171, type: trojan, password: 375e1e34-8f6f-39be-bdb9-52080f546d4d, sni: mlxy.jiashumao.net, skip-cert-verify: true, udp: true}
+  - {name: CN 10, server: 29d78fe.pi.gladns.com, port: 3389, type: trojan, password: 8c72bafbd4837610, skip-cert-verify: true, udp: true}
+  - {name: CN 11, server: cmrelay01.downsite.xyz, port: 5701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: CN 12, server: gzyd1.52147.top, port: 30170, type: trojan, password: 52a98419-efab-4c34-b4cc-4e2a7bc37029, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 13, server: gzyd1.52147.top, port: 20160, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 14, server: hnyd.52147.top, port: 30170, type: trojan, password: 52a98419-efab-4c34-b4cc-4e2a7bc37029, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 15, server: hnyd.52147.top, port: 20160, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 16, server: hnyd.52147.top, port: 20120, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 17, server: 29d78fe.nf.gladns.com, port: 3389, type: trojan, password: 8c72bafbd4837610, skip-cert-verify: true, udp: true}
+  - {name: CN 18, server: hnyd.52147.top, port: 20060, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: huayun.xyz, skip-cert-verify: true, udp: true}
   - {name: HK 01, server: tj-hk01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
-  - {name: HK 02, server: trhk.moonfree.top, port: 443, type: trojan, password: 534fad63-f38a-4970-b3d1-41ac2de0afa5, skip-cert-verify: true, udp: true}
-  - {name: HK 03, server: tj-hk01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
-  - {name: HK 04, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, skip-cert-verify: true, udp: true}
-  - {name: HK 05, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, skip-cert-verify: true, udp: true}
-  - {name: HK 06, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, skip-cert-verify: true, udp: true}
+  - {name: HK 02, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, skip-cert-verify: true, udp: true}
+  - {name: HK 03, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, skip-cert-verify: true, udp: true}
+  - {name: HK 04, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -112,38 +84,10 @@ proxy-groups:
       - CN 16
       - CN 17
       - CN 18
-      - CN 19
-      - CN 20
-      - CN 21
-      - CN 22
-      - CN 23
-      - CN 24
-      - CN 25
-      - CN 26
-      - CN 27
-      - CN 28
-      - CN 29
-      - CN 30
-      - CN 31
-      - CN 32
-      - CN 33
-      - CN 34
-      - CN 35
-      - CN 36
-      - CN 37
-      - CN 38
-      - CN 39
-      - CN 40
-      - CN 41
-      - CN 42
-      - CN 43
-      - CN 44
       - HK 01
       - HK 02
       - HK 03
       - HK 04
-      - HK 05
-      - HK 06
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
@@ -168,38 +112,10 @@ proxy-groups:
       - CN 16
       - CN 17
       - CN 18
-      - CN 19
-      - CN 20
-      - CN 21
-      - CN 22
-      - CN 23
-      - CN 24
-      - CN 25
-      - CN 26
-      - CN 27
-      - CN 28
-      - CN 29
-      - CN 30
-      - CN 31
-      - CN 32
-      - CN 33
-      - CN 34
-      - CN 35
-      - CN 36
-      - CN 37
-      - CN 38
-      - CN 39
-      - CN 40
-      - CN 41
-      - CN 42
-      - CN 43
-      - CN 44
       - HK 01
       - HK 02
       - HK 03
       - HK 04
-      - HK 05
-      - HK 06
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -210,8 +126,6 @@ proxy-groups:
       - HK 02
       - HK 03
       - HK 04
-      - HK 05
-      - HK 06
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
@@ -236,38 +150,10 @@ proxy-groups:
       - CN 16
       - CN 17
       - CN 18
-      - CN 19
-      - CN 20
-      - CN 21
-      - CN 22
-      - CN 23
-      - CN 24
-      - CN 25
-      - CN 26
-      - CN 27
-      - CN 28
-      - CN 29
-      - CN 30
-      - CN 31
-      - CN 32
-      - CN 33
-      - CN 34
-      - CN 35
-      - CN 36
-      - CN 37
-      - CN 38
-      - CN 39
-      - CN 40
-      - CN 41
-      - CN 42
-      - CN 43
-      - CN 44
       - HK 01
       - HK 02
       - HK 03
       - HK 04
-      - HK 05
-      - HK 06
       - DIRECT
   - name: 👉 中国网站
     type: select
