@@ -268,6 +268,7 @@ proxy-groups:
       - HK 04
       - HK 05
       - HK 06
+      - DIRECT
   - name: 👉 中国网站
     type: select
     proxies:
