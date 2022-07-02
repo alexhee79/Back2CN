@@ -171,7 +171,7 @@ proxy-groups:
       - HK 02
       - HK 03
       - HK 04
-      - GLOBAL CONNECT
+      - GLOBAL
   - name: XIAOMI
     type: select
     proxies:
@@ -181,7 +181,7 @@ proxy-groups:
       - FALLBACK
       - CHINA
       - HONG KONG
-  - name: CHINA MUSIC (QQ/网易云音乐)
+  - name: CHINA MUSIC
     type: select
     proxies:
       - GLOBAL CONNECT
@@ -1865,5 +1865,7 @@ rules:
   - DOMAIN-SUFFIX,xiaomi.net,XIAOMI
   - DOMAIN-SUFFIX,xiaomicp.com,XIAOMI
   - DOMAIN-SUFFIX,miwifi.com,XIAOMI
-  - DOMAIN-SUFFIX,music.163.com,CHINA MUSIC (QQ/网易云音乐)
+  - DOMAIN-SUFFIX,music.163.com,CHINA MUSIC
+  - DOMAIN-SUFFIX,music.126.net,CHINA MUSIC
+  - DOMAIN-SUFFIX,netease.com,CHINA MUSIC
   - MATCH,GLOBAL CONNECT
