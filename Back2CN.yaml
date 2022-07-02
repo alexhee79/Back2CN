@@ -171,7 +171,7 @@ proxy-groups:
       - HK 02
       - HK 03
       - HK 04
-      - GLOBAL
+      - GLOBAL CONNECT
   - name: XIAOMI
     type: select
     proxies:
