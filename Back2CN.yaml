@@ -175,7 +175,7 @@ proxy-groups:
   - name: XIAOMI
     type: select
     proxies:
-      - GLOBAL
+      - GLOBAL CONNECT
       - MANUAL
       - AUTOMATIC
       - FALLBACK
@@ -184,7 +184,7 @@ proxy-groups:
   - name: CHINA MUSIC (QQ/网易云音乐)
     type: select
     proxies:
-      - GLOBAL
+      - GLOBAL CONNECT
       - MANUAL
       - AUTOMATIC
       - FALLBACK
