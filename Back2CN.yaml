@@ -176,7 +176,7 @@ proxy-groups:
     type: select
     proxies:
       - AUTOMATIC
-      - MANUAl
+      - MANUAL
       - FALLBACK
       - CHINA
       - HONG KONG
@@ -185,7 +185,7 @@ proxy-groups:
     type: select
     proxies:
       - AUTOMATIC
-      - MANUAl
+      - MANUAL
       - FALLBACK
       - CHINA
       - HONG KONG
