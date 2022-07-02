@@ -190,7 +190,7 @@ proxy-groups:
       - FALLBACK
       - CHINA
       - HONG KONG
-  - name: GLOBAL
+  - name: GLOBAL CONNECT
     type: select
     proxies:
       - DIRECT
@@ -1866,4 +1866,4 @@ rules:
   - DOMAIN-SUFFIX,xiaomicp.com,XIAOMI
   - DOMAIN-SUFFIX,miwifi.com,XIAOMI
   - DOMAIN-SUFFIX,music.163.com,CHINA MUSIC (QQ/网易云音乐)
-  - MATCH,GLOBAL
+  - MATCH,GLOBAL CONNECT
