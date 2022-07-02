@@ -56,14 +56,6 @@ proxies:
   - {name: HK 03, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, skip-cert-verify: true, udp: true}
   - {name: HK 04, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, skip-cert-verify: true, udp: true}
 proxy-groups:
-  - name: PROXIES
-    type: select
-    proxies:
-      - MANUAL
-      - AUTOMATIC
-      - CHINA
-      - HONG KONG
-      - FALLBACK
   - name: MANUAL
     type: select
     proxies:
@@ -191,15 +183,6 @@ proxy-groups:
       - CHINA
       - HONG KONG
   - name: CHINA MUSIC (QQ/网易云音乐)
-    type: select
-    proxies:
-      - DIRECT
-      - MANUAL
-      - AUTOMATIC
-      - FALLBACK
-      - CHINA
-      - HONG KONG
-  - name: UNMATCH
     type: select
     proxies:
       - DIRECT
@@ -1880,4 +1863,4 @@ rules:
   - DOMAIN-SUFFIX,xiaomicp.com,XIAOMI
   - DOMAIN-SUFFIX,miwifi.com,XIAOMI
   - DOMAIN-SUFFIX,music.163.com,CHINA MUSIC (QQ/网易云音乐)
-  - MATCH,UNMATCH
+  - MATCH,GLOBAL
