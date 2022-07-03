@@ -64,7 +64,6 @@ proxies:
   - {name: HK 02, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, skip-cert-verify: true, udp: true}
   - {name: HK 03, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, skip-cert-verify: true, udp: true}
   - {name: HK 04, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, skip-cert-verify: true, udp: true}
-  - {name: HK 05, server: 210.0.158.220, port: 38443, type: trojan, password: 9cbbeb3c-d2b6-482c-97c1-1e037f0102f2, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: PROXY
     type: select
@@ -100,7 +99,6 @@ proxy-groups:
       - HK 02
       - HK 03
       - HK 04
-      - HK 05
   - name: AUTOMATIC
     type: url-test
     url: https://www.google.com/generate_204
@@ -138,7 +136,6 @@ proxy-groups:
       - HK 02
       - HK 03
       - HK 04
-      - HK 05
   - name: CHINA
     type: url-test
     url: https://www.google.com/generate_204
@@ -182,7 +179,6 @@ proxy-groups:
       - HK 02
       - HK 03
       - HK 04
-      - HK 05
   - name: XIAOMI
     type: select
     proxies:
