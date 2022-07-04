@@ -140,3 +140,4 @@ rules:
   - DOMAIN-SUFFIX,y.qq.com,CHINA-MUSIC  
   - DOMAIN,aqqmusic.tc.qq.com,CHINA-MUSIC
   - GEOIP,CN,AUTOMATIC
+  - MATCH,GLOBAL
