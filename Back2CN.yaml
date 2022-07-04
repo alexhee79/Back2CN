@@ -14,18 +14,13 @@ dns:
     - "*.lan"
     - localhost.ptlogin2.qq.com
   nameserver:
-    - 8.8.8.8 # default value
-    - https://1.1.1.1/dns-query # DNS over HTTPS
-    - 114.114.114.114 # default value
-    - tls://dns.rubyfish.cn:853 # DNS over TLS
-    - dhcp://en0 # dns from dhcp
-  fallback:
     - tls://1.0.0.1:853
     - tls://dns.google:853
-    - https://cloudflare-dns.com/dns-query
-    - https://dns.google/dns-query
+  fallback:
+    - 1.2.4.8
+    - 114.114.114.114
+    - 223.5.5.5
     - tls://dns.rubyfish.cn:853
-    - https://dns.rubyfish.cn/dns-query
   fallback-filter:
     geoip: true
     ipcidr:
