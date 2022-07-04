@@ -73,7 +73,7 @@ proxy-groups:
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
-    tolerance: 100
+    tolerance: 50
     proxies:
       - CN 01
       - CN 02
@@ -85,7 +85,7 @@ proxy-groups:
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
-    tolerance: 100
+    tolerance: 50
     proxies:
       - HK 01
       - HK 02
@@ -143,4 +143,3 @@ rules:
   - DOMAIN-SUFFIX,y.qq.com,CHINA-MUSIC  
   - DOMAIN,aqqmusic.tc.qq.com,CHINA-MUSIC
   - GEOIP,CN,AUTOMATIC
-  - MATCH,DIRECT
