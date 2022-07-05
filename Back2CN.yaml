@@ -68,6 +68,7 @@ dns:
     - "*.xiaomi.net"
     - "*.miwifi.com"
     - "*.mi.com"
+    - "*.baidu.com"
     - music.migu.cn
     - "*.msftconnecttest.com"
     - "*.msftncsi.com"
@@ -136,6 +137,8 @@ proxy-groups:
   - name: PROXY
     type: select
     proxies:
+      - GLOBAL CONNECT
+      - AUTOMATIC
       - CN 01
       - CN 02
       - CN 03
@@ -147,7 +150,6 @@ proxy-groups:
       - HK 03
       - HK 04
       - HK 05
-      - GLOBAL CONNECT
   - name: AUTOMATIC
     type: url-test
     url: https://www.google.com/generate_204
@@ -230,8 +232,6 @@ cfw-bypass:
   - <local>
 rules:
   - DOMAIN-KEYWORD,xiaomi,XIAOMI
-  - DOMAIN-KEYWORD,mi,XIAOMI
-  - DOMAIN-KEYWORD,miwifi,XIAOMI
   - DOMAIN-SUFFIX,mi.com,XIAOMI
   - DOMAIN-SUFFIX,xiaomi.com,XIAOMI
   - DOMAIN-SUFFIX,xiaomi.net,XIAOMI
@@ -243,5 +243,5 @@ rules:
   - DOMAIN-SUFFIX,qqmusic.qq.com,CHINA-MUSIC  
   - DOMAIN-SUFFIX,y.qq.com,CHINA-MUSIC  
   - DOMAIN,aqqmusic.tc.qq.com,CHINA-MUSIC
-  - GEOIP,CN,AUTOMATIC
+  - GEOIP,CN,PROXY
   - MATCH,GLOBAL CONNECT
