@@ -64,6 +64,8 @@ dns:
     - "*.xiami.com"
     - "*.music.migu.cn"
     - "*.xiaomi.com"
+    - "*.xiaomi.cn"
+    - "*.xiaomi.net"
     - "*.miwifi.com"
     - "*.mi.com"
     - music.migu.cn
@@ -228,9 +230,12 @@ cfw-bypass:
   - <local>
 rules:
   - DOMAIN-KEYWORD,xiaomi,XIAOMI
+  - DOMAIN-KEYWORD,mi,XIAOMI
+  - DOMAIN-KEYWORD,miwifi,XIAOMI
   - DOMAIN-SUFFIX,mi.com,XIAOMI
   - DOMAIN-SUFFIX,xiaomi.com,XIAOMI
   - DOMAIN-SUFFIX,xiaomi.net,XIAOMI
+  - DOMAIN-SUFFIX,xiaomi.cn,XIAOMI
   - DOMAIN-SUFFIX,xiaomicp.com,XIAOMI
   - DOMAIN-SUFFIX,miwifi.com,XIAOMI
   - DOMAIN-SUFFIX,music.163.com,CHINA-MUSIC
