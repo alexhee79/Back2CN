@@ -123,16 +123,13 @@ dns:
       - 240.0.0.0/4
 proxies:
   - {name: CN 01, server: cmrelay01.downsite.xyz, port: 5701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 02, server: cmrelay01.downsite.xyz, port: 5703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 03, server: gzyd2.52147.top, port: 30120, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, skip-cert-verify: true, udp: true} 
-  - {name: CN 04, server: gzyd1.52147.top, port: 30130, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, skip-cert-verify: true, udp: true}
-  - {name: CN 05, server: hnyd.52147.top, port: 30180, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, skip-cert-verify: true, udp: true}
-  - {name: CN 06, server: gzyd1.52147.top, port: 30010, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, skip-cert-verify: true, udp: true}
+  - {name: CN 02, server: svip02.03download.xyz, port: 22009, type: trojan, password: dd7e8c6c-3c3e-46ad-833f-b1f547fb4dd3, skip-cert-verify: true, udp: true}
+  - {name: CN 03, server: svip02.03download.xyz, port: 22004, type: trojan, password: dd7e8c6c-3c3e-46ad-833f-b1f547fb4dd3, skip-cert-verify: true, udp: true}
+  - {name: CN 04, server: moble02.03download.xyz, port: 22001, type: trojan, password: dd7e8c6c-3c3e-46ad-833f-b1f547fb4dd3, skip-cert-verify: true, udp: true}
+  - {name: CN 05, server: moble01.03download.xyz, port: 22007, type: trojan, password: dd7e8c6c-3c3e-46ad-833f-b1f547fb4dd3, skip-cert-verify: true, udp: true}
+  - {name: CN 06, server: unicom01.03download.xyz, port: 22008, type: trojan, password: dd7e8c6c-3c3e-46ad-833f-b1f547fb4dd3, skip-cert-verify: true, udp: true}
+  - {name: CN 07, server: cn201.03download.xyz, port: 22008, type: trojan, password: dd7e8c6c-3c3e-46ad-833f-b1f547fb4dd3, skip-cert-verify: true, udp: true}
   - {name: HK 01, server: tj-hk01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
-  - {name: HK 02, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, skip-cert-verify: true, udp: true}
-  - {name: HK 03, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, skip-cert-verify: true, udp: true}
-  - {name: HK 04, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, skip-cert-verify: true, udp: true}
-  - {name: HK 05, server: hkt.52147.top, port: 28000, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: PROXY
     type: select
@@ -146,10 +143,6 @@ proxy-groups:
       - CN 05
       - CN 06
       - HK 01
-      - HK 02
-      - HK 03
-      - HK 04
-      - HK 05
   - name: AUTOMATIC
     type: url-test
     url: https://www.google.com/generate_204
@@ -162,10 +155,6 @@ proxy-groups:
       - CN 05
       - CN 06
       - HK 01
-      - HK 02
-      - HK 03
-      - HK 04
-      - HK 05
   - name: CHINA
     type: url-test
     url: https://www.google.com/generate_204
@@ -183,10 +172,6 @@ proxy-groups:
     interval: 300
     proxies:
       - HK 01
-      - HK 02
-      - HK 03
-      - HK 04
-      - HK 05
   - name: XIAOMI
     type: select
     proxies:
