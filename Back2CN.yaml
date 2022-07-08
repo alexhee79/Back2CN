@@ -19,19 +19,19 @@ dns:
   ipv6: false
   use-host: true
   enhanced-mode: fake-ip
-  listen: 0.0.0.0:7874
+  listen: 0.0.0.0:53
   nameserver:
     - 1.1.1.1
     - 8.8.8.8
   fallback:
     - 1.0.0.1
-    - https://dns.cloudflare.com/dns-query
-    - https://dns.google/dns-query
-    - 112.215.203.254
+    - 119.29.29.29
+    - 223.5.5.5
   default-nameserver:
     - 1.1.1.1
     - 8.8.8.8
-    - 112.215.203.254
+    - 119.29.29.29
+    - 223.5.5.5
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - "*.lan"
@@ -406,7 +406,7 @@ rules:
   - DOMAIN-SUFFIX,126.net,CHINA-MUSIC
   - DOMAIN-SUFFIX,music.163.com,CHINA-MUSIC
   - DOMAIN-SUFFIX,music.qq.com,CHINA-MUSIC
-   - DOMAIN-SUFFIX,tc.qq.com,CHINA-MUSIC
+  - DOMAIN-SUFFIX,tc.qq.com,CHINA-MUSIC
   
   # Others
   - GEOIP,CN,CHINA-IP
