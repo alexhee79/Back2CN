@@ -1,28 +1,14 @@
 port: 7890
 socks-port: 7891
-ipv6: false
-mode: rule
-log-level: info
 allow-lan: true
-external-controller: 0.0.0.0:9090
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
 dns:
   enable: true
   ipv6: false
-  use-host: true
-  enhanced-mode: fake-ip
   listen: 0.0.0.0:53
-  nameserver:
-    - 1.1.1.1
-    - 8.8.8.8
-  fallback:
-    - 1.0.0.1
-    - 119.29.29.29
-    - 223.5.5.5
-  default-nameserver:
-    - 1.1.1.1
-    - 8.8.8.8
-    - 119.29.29.29
-    - 223.5.5.5
+  enhanced-mode: redir-host
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - "*.lan"
@@ -117,6 +103,15 @@ dns:
     - "*.ffxiv.com"
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
+  nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  fallback:
+    - 1.0.0.1
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback-filter:
+  geoip: true
 proxies:
   - {name: CN 10, server: aiavnd1.vip.www.klrxyru.cn, port: 1611, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
   - {name: CN 11, server: bgphk6.vip.www.klrxyru.cn, port: 579, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
@@ -165,7 +160,6 @@ proxies:
   - {name: CN 9, server: relaysgp1.vip.www.klrxyru.cn, port: 1501, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
   - {name: HK 1, server: tj-hk01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
   - {name: HK 2, server: hkt.52147.top, port: 28000, type: trojan, password: c35ff7bd-3596-48df-8cfc-41f8c576ab4e, sni: download.windowsupdate1.com, skip-cert-verify: true, udp: true}
-
 proxy-groups:
   - name: PROXY
     type: select
@@ -359,7 +353,6 @@ proxy-groups:
     proxies:
       - DIRECT
       - REJECT
-      
 cfw-bypass:
   - localhost
   - 127.*
@@ -382,7 +375,6 @@ cfw-bypass:
   - 172.31.*
   - 192.168.*
   - <local>
-  
 rules:
   # XIAOMI
   - DOMAIN-KEYWORD,xiaomi,XIAOMI
