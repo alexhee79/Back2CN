@@ -54,6 +54,9 @@ dns:
     - api.joox.com
     - joox.com
     - y.qq.com
+    - "*.mi.com"
+    - "*.xiaomi.com"
+    - "*.miwifi.com"
     - "*.y.qq.com"
     - streamoc.music.tc.qq.com
     - mobileoc.music.tc.qq.com
