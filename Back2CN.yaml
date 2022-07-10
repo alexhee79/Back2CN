@@ -130,15 +130,15 @@ dns:
       - 255.255.255.255/32
   geoip: true
 proxies:
-  - {name: CN 01, server: 119.36.161.40, port: 443, type: trojan, password: 1d1a4b90-fa07-11ec-80a5-1239d0255272, sni: trojan3.udpgw.com, skip-cert-verify: true, udp: true}
-  - {name: CN 02, server: cmb.3sx.xyz, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: a997fd8e-59d7-47cf-afe8-2204bd286017, udp: true}
-  - {name: CN 03, server: cmb.3sx.xyz, port: 21005, type: ss, cipher: chacha20-ietf-poly1305, password: a997fd8e-59d7-47cf-afe8-2204bd286017, udp: true}
-  - {name: CN 04, server: 106.75.233.91, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: CN 05, server: 71.131.222.153, port: 21004, type: ss, cipher: chacha20-ietf-poly1305, password: a997fd8e-59d7-47cf-afe8-2204bd286017, udp: true}
-  - {name: CN 06, server: 106.75.233.91, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN 07, server: 71.131.222.153, port: 11002, type: ss, cipher: chacha20-ietf-poly1305, password: a997fd8e-59d7-47cf-afe8-2204bd286017, udp: true}
-  - {name: CN 08, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, skip-cert-verify: true, udp: true}
-  - {name: CN 09, server: 103.56.62.145, port: 3381, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: CN 1, server: 119.36.161.40, port: 443, type: trojan, password: 1d1a4b90-fa07-11ec-80a5-1239d0255272, sni: trojan3.udpgw.com, skip-cert-verify: true, udp: true}
+  - {name: CN 2, server: cmb.3sx.xyz, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: a997fd8e-59d7-47cf-afe8-2204bd286017, udp: true}
+  - {name: CN 3, server: cmb.3sx.xyz, port: 21005, type: ss, cipher: chacha20-ietf-poly1305, password: a997fd8e-59d7-47cf-afe8-2204bd286017, udp: true}
+  - {name: CN 4, server: 106.75.233.91, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: CN 5, server: 71.131.222.153, port: 21004, type: ss, cipher: chacha20-ietf-poly1305, password: a997fd8e-59d7-47cf-afe8-2204bd286017, udp: true}
+  - {name: CN 6, server: 106.75.233.91, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: CN 7, server: 71.131.222.153, port: 11002, type: ss, cipher: chacha20-ietf-poly1305, password: a997fd8e-59d7-47cf-afe8-2204bd286017, udp: true}
+  - {name: CN 8, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, skip-cert-verify: true, udp: true}
+  - {name: CN 9, server: 103.56.62.145, port: 3381, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
   - {name: CN 10, server: 106.75.233.91, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
   - {name: CN 11, server: cmb.3sx.xyz, port: 21002, type: ss, cipher: chacha20-ietf-poly1305, password: a997fd8e-59d7-47cf-afe8-2204bd286017, udp: true}
   - {name: HK 01, server: 59.148.127.157, port: 12306, type: trojan, password: a997fd8e-59d7-47cf-afe8-2204bd286017, skip-cert-verify: true, udp: true}
