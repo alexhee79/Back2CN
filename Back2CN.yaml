@@ -144,8 +144,8 @@ proxies:
   - {name: CN 9, server: 103.56.62.145, port: 3381, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
   - {name: CN 10, server: 106.75.233.91, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
   - {name: CN 11, server: cmb.3sx.xyz, port: 21002, type: ss, cipher: chacha20-ietf-poly1305, password: a997fd8e-59d7-47cf-afe8-2204bd286017, udp: true}
-  - {name: HK 01, server: 59.148.127.157, port: 12306, type: trojan, password: a997fd8e-59d7-47cf-afe8-2204bd286017, skip-cert-verify: true, udp: true}
-  - {name: HK 02, server: tj-hk01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
+  - {name: HK 1, server: 59.148.127.157, port: 12306, type: trojan, password: a997fd8e-59d7-47cf-afe8-2204bd286017, skip-cert-verify: true, udp: true}
+  - {name: HK 2, server: tj-hk01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: PROXY
     type: select
