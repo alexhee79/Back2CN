@@ -1,218 +1,79 @@
+# BacktoCN
 port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: 127.0.0.1:9090
-dns:
-  enable: true
-  ipv6: false
-  listen: 0.0.0.0:53
-  enhanced-mode: redir-host
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - "*.lan"
-    - "*.localdomain"
-    - "*.example"
-    - "*.invalid"
-    - "*.localhost"
-    - "*.test"
-    - "*.local"
-    - "*.home.arpa"
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - "*.time.edu.cn"
-    - "*.ntp.org.cn"
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - music.163.com
-    - "*.music.163.com"
-    - "*.126.net"
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - "*.kuwo.cn"
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - y.qq.com
-    - "*.mi.com"
-    - "*.xiaomi.com"
-    - "*.miwifi.com"
-    - "*.y.qq.com"
-    - streamoc.music.tc.qq.com
-    - mobileoc.music.tc.qq.com
-    - isure.stream.qqmusic.qq.com
-    - dl.stream.qqmusic.qq.com
-    - aqqmusic.tc.qq.com
-    - amobile.music.tc.qq.com
-    - "*.xiami.com"
-    - "*.music.migu.cn"
-    - music.migu.cn
-    - "*.msftconnecttest.com"
-    - "*.msftncsi.com"
-    - msftconnecttest.com
-    - msftncsi.com
-    - localhost.ptlogin2.qq.com
-    - localhost.sec.qq.com
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - xnotify.xboxlive.com
-    - +.battlenet.com.cn
-    - +.wotgame.cn
-    - +.wggames.cn
-    - +.wowsgame.cn
-    - +.wargaming.net
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - +.stun.*.*
-    - +.stun.*.*.*
-    - +.stun.*.*.*.*
-    - heartbeat.belkin.com
-    - "*.linksys.com"
-    - "*.linksyssmartwifi.com"
-    - "*.router.asus.com"
-    - mesu.apple.com
-    - swscan.apple.com
-    - swquery.apple.com
-    - swdownload.apple.com
-    - swcdn.apple.com
-    - swdist.apple.com
-    - lens.l.google.com
-    - stun.l.google.com
-    - +.nflxvideo.net
-    - "*.square-enix.com"
-    - "*.finalfantasyxiv.com"
-    - "*.ffxiv.com"
-    - "*.mcdn.bilivideo.cn"
-    - +.media.dssott.com
-  nameserver:
-    - 1.1.1.1
-    - 8.8.8.8
-  fallback:
-    - 1.0.0.1
-    - 119.29.29.29
-    - 223.5.5.5
-  fallback-filter:
-  ipcidr:
-      - 0.0.0.0/8
-      - 10.0.0.0/8
-      - 100.64.0.0/10
-      - 127.0.0.0/8
-      - 169.254.0.0/16
-      - 172.16.0.0/12
-      - 192.0.0.0/24
-      - 192.0.2.0/24
-      - 192.88.99.0/24
-      - 192.168.0.0/16
-      - 198.18.0.0/15
-      - 198.51.100.0/24
-      - 203.0.113.0/24
-      - 224.0.0.0/4
-      - 240.0.0.0/4
-      - 255.255.255.255/32
-  geoip: true
+external-controller: 9090
 proxies:
-  - {name: CN 1, server: 119.36.161.40, port: 443, type: trojan, password: 1d1a4b90-fa07-11ec-80a5-1239d0255272, sni: trojan3.udpgw.com, skip-cert-verify: true, udp: true}
-  - {name: CN 2, server: cmb.3sx.xyz, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: a997fd8e-59d7-47cf-afe8-2204bd286017, udp: true}
-  - {name: CN 3, server: cmb.3sx.xyz, port: 21005, type: ss, cipher: chacha20-ietf-poly1305, password: a997fd8e-59d7-47cf-afe8-2204bd286017, udp: true}
-  - {name: CN 4, server: 106.75.233.91, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: CN 5, server: 71.131.222.153, port: 21004, type: ss, cipher: chacha20-ietf-poly1305, password: a997fd8e-59d7-47cf-afe8-2204bd286017, udp: true}
-  - {name: CN 6, server: 106.75.233.91, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN 7, server: 71.131.222.153, port: 11002, type: ss, cipher: chacha20-ietf-poly1305, password: a997fd8e-59d7-47cf-afe8-2204bd286017, udp: true}
-  - {name: CN 8, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, skip-cert-verify: true, udp: true}
-  - {name: CN 9, server: 103.56.62.145, port: 3381, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN 10, server: 106.75.233.91, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN 11, server: cmb.3sx.xyz, port: 21002, type: ss, cipher: chacha20-ietf-poly1305, password: a997fd8e-59d7-47cf-afe8-2204bd286017, udp: true}
-  - {name: HK 1, server: 59.148.127.157, port: 12306, type: trojan, password: a997fd8e-59d7-47cf-afe8-2204bd286017, skip-cert-verify: true, udp: true}
+  - {name: CN 1, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: CN 2, server: server: iepl.teacat2.xyz, port: 50000, type: ss, cipher: aes-256-gcm, password: 73742ec9-c6cb-49ec-aaf1-85c3a63977e9, udp: true}
+  - {name: CN 3, server: sh.teacat2.xyz, port: 50058, type: ss, cipher: aes-256-gcm, password: 8f6eeacb-f8b2-4daf-a590-5310cbf1639a, udp: true}
+  - {name: CN 4, server: sh.teacat2.xyz, port: 50060, type: ss, cipher: aes-256-gcm, password: 73742ec9-c6cb-49ec-aaf1-85c3a63977e9, udp: true}
+  - {name: CN 5, server: gzyd2.52147.top, port: 20140, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, skip-cert-verify: true, udp: true}
+  - {name: CN 6, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: HK 1, server: 47.243.31.8, port: 51657, type: vmess, uuid: f0eb8855-d3a4-4fc4-98b6-711681c756b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.31.8]}}, udp: true}
   - {name: HK 2, server: tj-hk01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
+  - {name: TW 1, server: b.tw.hideu.tw, port: 10629, type: ssr, cipher: dummy, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 139242:c6YW3v, obfs-param: "", udp: true}
+  - {name: TH 1, server: 119.59.116.248, port: 17159, type: trojan, password: PHnvNV7HGp, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
-    - GLOBAL-CONNECT
-    - AUTOMATIC
-    - CN 1
-    - CN 2
-    - CN 3
-    - CN 4
-    - CN 5
-    - CN 6
-    - CN 7
-    - CN 8
-    - CN 9
-    - CN 10
-    - CN 11
-    - HK 1
-    - HK 2
+     - GLOBAL-CONNECT
+     - AUTOMATIC
+     - CN 1
+     - CN 2
+     - CN 3
+     - CN 4
+     - CN 5
+     - CN 6
+     - HK 1
+     - HK 2
+     - TW 1
+     - TH 1
   - name: AUTOMATIC
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     proxies:
-    - CN 1
-    - CN 2
-    - CN 3
-    - CN 4
-    - CN 5
-    - CN 6
-    - CN 7
-    - CN 8
-    - CN 9
-    - CN 10
-    - CN 11
-    - HK 1
-    - HK 2
+     - CN 1
+     - CN 2
+     - CN 3
+     - CN 4
+     - CN 5
+     - CN 6
+     - HK 1
+     - HK 2
+     - TW 1
+     - TH 1
   - name: CHINA
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     proxies:
-    - CN 1
-    - CN 2
-    - CN 3
-    - CN 4
-    - CN 5
-    - CN 6
-    - CN 7
-    - CN 8
-    - CN 9
-    - CN 10
-    - CN 11
-  - name: HONG-KONG
+     - CN 1
+     - CN 2
+     - CN 3
+     - CN 4
+     - CN 5
+     - CN 6
+  - name: ASIA
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     proxies:
       - HK 1
       - HK 2
+      - TW 1
+      - TH 1
   - name: XIAOMI
     type: select
     proxies:
       - AUTOMATIC
       - PROXY
       - CHINA
-      - HONG-KONG
+      - ASIA
       - GLOBAL-CONNECT
   - name: CHINA-MUSIC
     type: select
@@ -220,7 +81,7 @@ proxy-groups:
       - AUTOMATIC
       - PROXY
       - CHINA
-      - HONG-KONG
+      - ASIA
       - GLOBAL-CONNECT
   - name: CHINA-IP
     type: select
@@ -228,35 +89,13 @@ proxy-groups:
       - AUTOMATIC
       - PROXY
       - CHINA
-      - HONG-KONG
+      - ASIA
       - GLOBAL-CONNECT
   - name: GLOBAL-CONNECT
     type: select
     proxies:
       - DIRECT
       - REJECT
-cfw-bypass:
-  - localhost
-  - 127.*
-  - 10.*
-  - 172.16.*
-  - 172.17.*
-  - 172.18.*
-  - 172.19.*
-  - 172.20.*
-  - 172.21.*
-  - 172.22.*
-  - 172.23.*
-  - 172.24.*
-  - 172.25.*
-  - 172.26.*
-  - 172.27.*
-  - 172.28.*
-  - 172.29.*
-  - 172.30.*
-  - 172.31.*
-  - 192.168.*
-  - <local>
 rules:
   # XIAOMI
   - DOMAIN-KEYWORD,xiaomi,XIAOMI
