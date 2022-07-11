@@ -86,11 +86,11 @@ proxy-groups:
   - name: CHINA-IP
     type: select
     proxies:
+      - GLOBAL-CONNECT
       - AUTOMATIC
       - PROXY
       - CHINA
       - ASIA
-      - GLOBAL-CONNECT
   - name: GLOBAL-CONNECT
     type: select
     proxies:
