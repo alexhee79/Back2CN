@@ -19,10 +19,12 @@ proxies:
   - {name: CN 11, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: CN 12, server: v2cross.com.02.v2ce.com, type: trojan, port: 443, password: 3gLlCYBipVwr6Y5F, skip-cert-verify: true, udp: true}
   - {name: HK 1, server: 47.243.31.8, port: 51657, type: vmess, uuid: f0eb8855-d3a4-4fc4-98b6-711681c756b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.31.8]}}, udp: true}
-  - {name: HK 2, server: tj-hk01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
+  - {name: HK 2, server: 103.253.43.228, port: 38000, type: trojan, password: 6206f617-a28a-4216-b461-fbbb362dc212, skip-cert-verify: true, udp: true}
+  - {name: HK 3, server: hkt.52147.top, port: 38000, type: trojan, password: 6206f617-a28a-4216-b461-fbbb362dc212, skip-cert-verify: true, udp: true}
   - {name: TW 1, server: tw.suntory.lol, port: 38513, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, skip-cert-verify: true, udp: true}
   - {name: TW 2, server: tw.suntory.lol, port: 38512, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, skip-cert-verify: true, udp: true}
   - {name: TW 3, server: tw.suntory.lol, port: 38511, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, skip-cert-verify: true, udp: true}
+  - {name: TW 4, server: hinet.52147.top, port: 28443, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, skip-cert-verify: true, udp: true}
   - {name: TH 1, server: 119.59.116.248, port: 17159, type: trojan, password: PHnvNV7HGp, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: PROXY
@@ -44,9 +46,11 @@ proxy-groups:
      - CN 12
      - HK 1
      - HK 2
+     - HK 3
      - TW 1
      - TW 2
      - TW 3
+     - TW 4
      - TH 1
   - name: AUTOMATIC
     type: url-test
@@ -67,9 +71,11 @@ proxy-groups:
      - CN 12
      - HK 1
      - HK 2
+     - HK 3
      - TW 1
      - TW 2
      - TW 3
+     - TW 4
      - TH 1
   - name: CHINA
     type: url-test
@@ -93,12 +99,14 @@ proxy-groups:
     url: https://www.google.com/generate_204
     interval: 300
     proxies:
-      - HK 1
-      - HK 2
-      - TW 1
-      - TW 2
-      - TW 3
-      - TH 1
+     - HK 1
+     - HK 2
+     - HK 3
+     - TW 1
+     - TW 2
+     - TW 3
+     - TW 4
+     - TH 1
   - name: XIAOMI
     type: select
     proxies:
