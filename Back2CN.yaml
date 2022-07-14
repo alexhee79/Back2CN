@@ -19,8 +19,8 @@ proxies:
   - {name: CN 11, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: CN 12, server: v2cross.com.02.v2ce.com, type: trojan, port: 443, password: 3gLlCYBipVwr6Y5F, skip-cert-verify: true, udp: true}
   - {name: HK 1, server: 47.243.31.8, port: 51657, type: vmess, uuid: f0eb8855-d3a4-4fc4-98b6-711681c756b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.31.8]}}, udp: true}
-  - {name: HK 2, server: 103.253.43.228, port: 38000, type: trojan, password: 6206f617-a28a-4216-b461-fbbb362dc212, skip-cert-verify: true, udp: true}
-  - {name: HK 3, server: hkt.52147.top, port: 38000, type: trojan, password: 6206f617-a28a-4216-b461-fbbb362dc212, skip-cert-verify: true, udp: true}
+  - {name: HK 2, server: hkt.52147.top, port: 38000, type: trojan, password: 2bc2d0fd-eb35-401b-965e-59bc9ba1bf4f, skip-cert-verify: true, udp: true}
+  - {name: HK 3, server: 103.253.43.228, port: 38000, type: trojan, password: deb51b25-ebf5-4e4c-b169-3b96197bc739, skip-cert-verify: true, udp: true}
   - {name: TW 1, server: tw.suntory.lol, port: 38513, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, skip-cert-verify: true, udp: true}
   - {name: TW 2, server: tw.suntory.lol, port: 38512, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, skip-cert-verify: true, udp: true}
   - {name: TW 3, server: tw.suntory.lol, port: 38511, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, skip-cert-verify: true, udp: true}
