@@ -16,7 +16,7 @@ proxies:
   - {name: CN 8, server: v2cross.com.02.v2ce.com, type: trojan, port: 443, password: 3gLlCYBipVwr6Y5F, skip-cert-verify: true, udp: true}
   - {name: HK 1, server: 47.243.31.8, port: 51657, type: vmess, uuid: f0eb8855-d3a4-4fc4-98b6-711681c756b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.31.8]}}, udp: true}
   - {name: HK 2, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: HK 3, server: trojan-daozhu-uallen-qbit-azure-hk.kinhproxy.com, port: 443, type: trojan, password: trojan-daozhu-uallen-qbit-azure-hk, skip-cert-verify: true, udp: true}
+  #- {name: HK 3, server: trojan-daozhu-uallen-qbit-azure-hk.kinhproxy.com, port: 443, type: trojan, password: trojan-daozhu-uallen-qbit-azure-hk, skip-cert-verify: true, udp: true}
   - {name: HK 4, server: azgy001.xiba1.xyz, port: 20713, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, skip-cert-verify: true, udp: true}
   - {name: TH 1, server: 119.59.116.248, port: 17159, type: trojan, password: PHnvNV7HGp, skip-cert-verify: true, udp: true}
 proxy-groups:
@@ -35,7 +35,7 @@ proxy-groups:
      - CN 8
      - HK 1
      - HK 2
-     - HK 3
+     #- HK 3
      - HK 4
      - TH 1
   - name: AUTOMATIC
@@ -53,7 +53,7 @@ proxy-groups:
      - CN 8
      - HK 1
      - HK 2
-     - HK 3
+     #- HK 3
      - HK 4
      - TH 1
   - name: CHINA
@@ -76,7 +76,7 @@ proxy-groups:
     proxies:
      - HK 1
      - HK 2
-     - HK 3
+     #- HK 3
      - HK 4
      - TH 1
   - name: XIAOMI
