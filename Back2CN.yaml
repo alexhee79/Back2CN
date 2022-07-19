@@ -7,25 +7,17 @@ log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
   - {name: CN 1, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: CN 2, server: gzyd1.52147.top, port: 30010, type: trojan, password: 3324b5b9-8d7c-4e89-b184-ff19fa2582c7, skip-cert-verify: true, udp: true}
-  - {name: CN 3, server: 120.240.50.253, port: 3704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 4, server: cmrelay01.downsite.xyz, port: 3701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: CN 5, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 6, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 7, server: gzyd2.52147.top, port: 20020, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, skip-cert-verify: true, udp: true}
-  - {name: CN 8, server: hnyd.52147.top, port: 20170, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, skip-cert-verify: true, udp: true}
-  - {name: CN 9, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 10, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 11, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 12, server: v2cross.com.02.v2ce.com, type: trojan, port: 443, password: 3gLlCYBipVwr6Y5F, skip-cert-verify: true, udp: true}
+  - {name: CN 2, server: 14.119.87.180, port: 45250, type: vmess, uuid: 73871590-6d88-434c-a6f7-9c1fbd57057d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 14.119.87.180}, udp: true}
+  - {name: CN 3, server: 120.241.236.217, port: 16111, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 4, server: 120.241.236.217, port: 16216, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 5, server: 120.233.150.132, port: 16262, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 6, server: 120.233.150.132, port: 16111, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 7, server: 120.241.236.217, port: 16112, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 8, server: v2cross.com.02.v2ce.com, type: trojan, port: 443, password: 3gLlCYBipVwr6Y5F, skip-cert-verify: true, udp: true}
   - {name: HK 1, server: 47.243.31.8, port: 51657, type: vmess, uuid: f0eb8855-d3a4-4fc4-98b6-711681c756b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.31.8]}}, udp: true}
-  - {name: HK 2, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 2, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: HK 3, server: trojan-daozhu-uallen-qbit-azure-hk.kinhproxy.com, port: 443, type: trojan, password: trojan-daozhu-uallen-qbit-azure-hk, skip-cert-verify: true, udp: true}
-  - {name: HK 4, server: hk.vc3.hyperlinkvpn.xyz, port: 52000, type: trojan, password: 0aa9e572-ca8b-4d2c-bef6-501fc3eacbb8, skip-cert-verify: true, udp: true}
-  - {name: TW 1, server: tw.suntory.lol, port: 38513, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, skip-cert-verify: true, udp: true}
-  - {name: TW 2, server: tw.suntory.lol, port: 38512, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, skip-cert-verify: true, udp: true}
-  - {name: TW 3, server: tw.suntory.lol, port: 38511, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, skip-cert-verify: true, udp: true}
-  - {name: TW 4, server: hinet.52147.top, port: 28443, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, skip-cert-verify: true, udp: true}
+  - {name: HK 4, server: azgy001.xiba1.xyz, port: 20713, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, skip-cert-verify: true, udp: true}
   - {name: TH 1, server: 119.59.116.248, port: 17159, type: trojan, password: PHnvNV7HGp, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: PROXY
@@ -41,18 +33,10 @@ proxy-groups:
      - CN 6
      - CN 7
      - CN 8
-     - CN 9
-     - CN 10
-     - CN 11
-     - CN 12
      - HK 1
      - HK 2
      - HK 3
      - HK 4
-     - TW 1
-     - TW 2
-     - TW 3
-     - TW 4
      - TH 1
   - name: AUTOMATIC
     type: url-test
@@ -67,18 +51,10 @@ proxy-groups:
      - CN 6
      - CN 7
      - CN 8
-     - CN 9
-     - CN 10
-     - CN 11
-     - CN 12
      - HK 1
      - HK 2
      - HK 3
      - HK 4
-     - TW 1
-     - TW 2
-     - TW 3
-     - TW 4
      - TH 1
   - name: CHINA
     type: url-test
@@ -93,10 +69,6 @@ proxy-groups:
      - CN 6
      - CN 7
      - CN 8
-     - CN 9
-     - CN 10
-     - CN 11
-     - CN 12
   - name: ASIA
     type: url-test
     url: https://www.google.com/generate_204
@@ -106,10 +78,6 @@ proxy-groups:
      - HK 2
      - HK 3
      - HK 4
-     - TW 1
-     - TW 2
-     - TW 3
-     - TW 4
      - TH 1
   - name: XIAOMI
     type: select
