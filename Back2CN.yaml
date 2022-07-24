@@ -50,6 +50,30 @@ proxy-groups:
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
+    tolerance: 50
+    proxies:
+     - CN 1
+     - HK 1
+     - HK 2
+     - HK 3
+     - HK 4
+     - TH 1
+     - TW 1 
+     - IN 1
+     - IN 2
+     - IN 3
+     - IN 4
+     - SG 1
+     - SG 2
+     - SG 3
+     - SG 4
+     - SG 5
+     - SG 6
+  - name: AUTO-FALLBACK
+    type: fallback
+    url: https://www.google.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
      - CN 1
      - HK 1
@@ -98,6 +122,7 @@ proxy-groups:
   - name: XIAOMI
     type: select
     proxies:
+      - AUTO-FALLBACK
       - AUTOMATIC
       - PROXY
       - CHINA
@@ -106,6 +131,7 @@ proxy-groups:
   - name: CHINA-MUSIC
     type: select
     proxies:
+      - AUTO-FALLBACK
       - AUTOMATIC
       - PROXY
       - CHINA
@@ -115,6 +141,7 @@ proxy-groups:
     type: select
     proxies:
       - GLOBAL-CONNECT
+      - AUTO-FALLBACK
       - AUTOMATIC
       - PROXY
       - CHINA
