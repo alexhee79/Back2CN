@@ -25,7 +25,7 @@ proxy-groups:
      - HK 3
      - HK 4
      - TH 1
-     = TW 1
+     - TW 1
   - name: AUTOMATIC
     type: url-test
     url: https://www.google.com/generate_204
@@ -37,7 +37,7 @@ proxy-groups:
      - HK 3
      - HK 4
      - TH 1
-     = TW 1
+     - TW 1
   - name: CHINA
     type: url-test
     url: https://www.google.com/generate_204
