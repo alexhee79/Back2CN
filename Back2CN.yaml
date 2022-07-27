@@ -5,34 +5,7 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
-dns:
-  enable: true
-  ipv6: false
-  listen: 0.0.0.0:53
-  enhanced-mode: redir-host
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - "*.lan"
-    - localhost.ptlogin2.qq.com
-  nameserver:
-    - 8.8.8.8
-    - 1.1.1.1
-    - tls://dns.rubyfish.cn:853
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
-    - https://dns.rubyfish.cn/dns-query
-    - https://cloudflare-dns.com/dns-query
-    - https://dns.google/dns-query
-  fallback:
-    - 223.5.5.5
-    - 180.76.76.76
-    - 119.29.29.29
-    - 117.50.10.10
-    - 114.114.114.114
-  fallback-filter:
-    geoip: false
-    ipcidr:
-      - 240.0.0.0/4
+
 proxies:
   - {name: CN 1, server: 183.232.141.82, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31000:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
   - {name: CN 2, server: 183.232.141.117, port: 559, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 30999:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
