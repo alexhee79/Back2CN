@@ -1,16 +1,43 @@
 # BacktoCN
 port: 7890
 socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+ipv6: false
+mode: rule
+log-level: silent
 allow-lan: true
-mode: Rule
-log-level: info
-external-controller: 127.0.0.1:9090
+external-controller: 0.0.0.0:9090
+secret: ""
+bind-address: "*"
+unified-delay: true
+profile:
+  store-selected: true
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 0.0.0.0:7874
+  nameserver:
+    - 8.8.8.8
+    - 1.0.0.1
+    - https://dns.google/dns-query
+  fallback:
+    - 1.1.1.1
+    - 8.8.4.4
+    - https://cloudflare-dns.com/dns-query
+    - 112.215.203.254
+  default-nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+    - 112.215.203.254
 
 proxies:
-  - {name: CN 1, server: sg-cn-relay-6-689145.dk-3a4e.com, port: 9306, type: trojan, password: f2a28b26-3462-11e9-96d3-020b85e0a428, skip-cert-verify: true, udp: true}
+  - {name: CN 1, server: 47.242.187.154, port: 38838, type: vmess, uuid: 383e161c-7fff-4a6f-f8f5-08c303e5429b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: "", udp: true}
   - {name: CN 2, server: sg-cn-hk-relay-3-dd4440.dk-3a4e.com, port: 9303, type: trojan, password: f2a28b26-3462-11e9-96d3-020b85e0a428, skip-cert-verify: true, udp: true}
   - {name: CN 3, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, skip-cert-verify: true, udp: true}
-  - {name: CN 4, server: tw-tpe-h-tr.cdn.savoy.click, port: 10089, type: trojan, password: uDTmEAGwuCUZXZvwhWJk, skip-cert-verify: true, udp: true}
+  - {name: CN 1, server: sg-cn-relay-6-689145.dk-3a4e.com, port: 9306, type: trojan, password: f2a28b26-3462-11e9-96d3-020b85e0a428, skip-cert-verify: true, udp: true}
   - {name: TH 1, server: 119.59.116.248, port: 17159, type: trojan, password: PHnvNV7HGp, skip-cert-verify: true, udp: true}
   - {name: HK 1, server: hk.vc3.hyperlinkvpn.xyz, port: 52000, type: trojan, password: 0aa9e572-ca8b-4d2c-bef6-501fc3eacbb8, skip-cert-verify: true, udp: true}
   - {name: IN 1, server: in-01.licom.ml, port: 8443, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, skip-cert-verify: true, udp: true}
