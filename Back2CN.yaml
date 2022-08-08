@@ -35,7 +35,22 @@ dns:
 
 proxies:
   - {name: CN 1, server: 47.242.187.154, port: 38838, type: vmess, uuid: 383e161c-7fff-4a6f-f8f5-08c303e5429b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: "", udp: true}
-  - {name: CN 2, server: 8.219.146.138, port: 23205, type: vmess, uuid: 442094b1-a2c2-422f-f3cf-7fc0bb134666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: "", network: ws, ws-opts:, path: /wss, headers:, Host: "",udp: true}
+  - name: CN 2
+    server: 8.219.146.138
+    port: 23205
+    type: vmess
+    uuid: 442094b1-a2c2-422f-f3cf-7fc0bb134666
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: ""
+    network: ws
+    ws-opts:
+      path: /wss
+      headers:
+        Host: ""
+    udp: true
   - {name: CN 3, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, skip-cert-verify: true, udp: true}
   - {name: CN 4, server: sg-cn-relay-6-689145.dk-3a4e.com, port: 9306, type: trojan, password: f2a28b26-3462-11e9-96d3-020b85e0a428, skip-cert-verify: true, udp: true}
   - {name: TH 1, server: 119.59.116.248, port: 17159, type: trojan, password: PHnvNV7HGp, skip-cert-verify: true, udp: true}
