@@ -13,7 +13,6 @@ proxy-groups:
     type: select
     use:
      - CN
-     - HK
   - name: AUTOMATIC
     type: url-test
     url: https://www.google.com/generate_204
@@ -21,7 +20,6 @@ proxy-groups:
     tolerance: 50
     use:
      - CN
-     - HK
   - name: AUTO-FALLBACK
     type: fallback
     url: https://www.google.com/generate_204
@@ -29,7 +27,6 @@ proxy-groups:
     tolerance: 50
     use:
      - CN
-     - HK
   - name: XIAOMI
     type: select
     proxies:
@@ -60,14 +57,6 @@ proxy-providers:
     type: http
     url: "https://proxy.yiun.xyz/clash/proxies?c=CN"
     path: proxy.yiun.xyz/provider-cn.yaml
-    health-check:
-      enable: true
-      interval: 300
-      url: http://www.gstatic.com/generate_204
-  HK:
-    type: http
-    url: "https://proxy.yiun.xyz/clash/proxies?c=HK"
-    path: proxy.yiun.xyz/provider-hk.yaml
     health-check:
       enable: true
       interval: 300
