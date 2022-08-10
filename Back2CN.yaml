@@ -19,8 +19,9 @@ proxies:
 proxy-groups:
   - name: PROXY
     type: select
+    use:
+     - CN
     proxies:
-     - CHINA
      - HK 1
      - HK 2
      - HK 3
@@ -34,8 +35,9 @@ proxy-groups:
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
+    use:
+     - CN
     proxies:
-     - CHINA
      - HK 1
      - HK 2
      - HK 3
@@ -49,8 +51,9 @@ proxy-groups:
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
+    use:
+     - CN
     proxies:
-     - CHINA
      - HK 1
      - HK 2
      - HK 3
@@ -59,12 +62,6 @@ proxy-groups:
      - IN 2
      - IN 3
      - IN 4
-  - name: CHINA
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - CN
   - name: XIAOMI
     type: select
     proxies:
@@ -93,11 +90,11 @@ proxy-groups:
 proxy-providers:
   CN:
     type: http
-    url: "https://proxy.yiun.xyz/clash/proxies?c=CN,HK,TW"
+    url: "https://proxy.yiun.xyz/clash/proxies?c=CN"
     path: proxy.yiun.xyz/provider-cn.yaml
     health-check:
       enable: true
-      interval: 600
+      interval: 300
       url: http://www.gstatic.com/generate_204
 
 rules:
