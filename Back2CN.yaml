@@ -11,20 +11,35 @@ proxies:
 proxy-groups:
   - name: PROXY
     type: select
-    use:
-     - CN
+    proxies:
+     - CHINA
+     - HONG KONG
   - name: AUTOMATIC
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
-    use:
-     - CN
+    proxies:
+     - CHINA
+     - HONG KONG
   - name: AUTO-FALLBACK
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
+    proxies:
+     - CHINA
+     - HONG KONG
+  - name: CHINA
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
     use:
-     - CN
+      - CN
+  - name: HONG KONG
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
+    use:
+      - HK
   - name: XIAOMI
     type: select
     proxies:
@@ -59,7 +74,14 @@ proxy-providers:
       enable: true
       interval: 300
       url: http://www.gstatic.com/generate_204
-
+  HK:
+    type: http
+    url: "https://proxy.yiun.xyz/clash/proxies?c=HK"
+    path: proxy.yiun.xyz/provider-cn.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
 rules:
   #GENERAL RULES  
   - DOMAIN-SUFFIX,smtp,DIRECT
