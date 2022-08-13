@@ -14,20 +14,23 @@ proxy-groups:
     proxies:
      - CHINA
      - HONG KONG
+     - TAIWAN
   - name: AUTOMATIC
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
-    proxies:
-     - CHINA
-     - HONG KONG
+    use:
+     - CN
+     - HK
+     - TW
   - name: AUTO-FALLBACK
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
-    proxies:
-     - CHINA
-     - HONG KONG
+    use:
+     - HK
+     - CN
+     - TW
   - name: CHINA
     type: url-test
     url: https://www.google.com/generate_204
@@ -40,6 +43,12 @@ proxy-groups:
     interval: 300
     use:
       - HK
+  - name: TAIWAN
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
+    use:
+      - TW
   - name: XIAOMI
     type: select
     proxies:
@@ -77,7 +86,15 @@ proxy-providers:
   HK:
     type: http
     url: "https://proxy.yiun.xyz/clash/proxies?c=HK"
-    path: proxy.yiun.xyz/provider-cn.yaml
+    path: proxy.yiun.xyz/provider-hk.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  TW:
+    type: http
+    url: "https://proxy.yiun.xyz/clash/proxies?c=TW"
+    path: proxy.yiun.xyz/provider-tw.yaml
     health-check:
       enable: true
       interval: 300
