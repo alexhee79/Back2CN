@@ -67,6 +67,7 @@ proxy-groups:
     type: select
     proxies:
       - GLOBAL-CONNECT
+      - PROXY
       - AUTO-FALLBACK
       - AUTOMATIC
   - name: GLOBAL-CONNECT
