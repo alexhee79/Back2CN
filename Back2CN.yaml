@@ -15,6 +15,12 @@ proxy-groups:
      - CN
      - HK
      - TW
+  - name: SELECT-COUNTRY
+    type: select
+    proxies:
+     - CHINA
+     - HONG KONG
+     - TAIWAN
   - name: AUTOMATIC
     type: url-test
     url: https://www.google.com/generate_204
@@ -31,27 +37,48 @@ proxy-groups:
      - HK
      - CN
      - TW
+  - name: CHINA
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
+    use:
+     - CN
+  - name: HONG KONG
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
+    use:
+     - HK
+  - name: TAIWAN
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
+    use:
+     - TW
   - name: XIAOMI
     type: select
     proxies:
-      - AUTO-FALLBACK
       - AUTOMATIC
       - PROXY
+      - SELECT-COUNTRY
+      - AUTO-FALLBACK
       - GLOBAL-CONNECT
   - name: CHINA-MUSIC
     type: select
     proxies:
-      - AUTO-FALLBACK
       - AUTOMATIC
       - PROXY
+      - SELECT-COUNTRY
+      - AUTO-FALLBACK
       - GLOBAL-CONNECT
   - name: CHINA-IP
     type: select
-    proxies:
-      - GLOBAL-CONNECT
-      - PROXY
-      - AUTO-FALLBACK
+    proxies: 
       - AUTOMATIC
+      - PROXY
+      - SELECT-COUNTRY
+      - AUTO-FALLBACK
+      - GLOBAL-CONNECT
   - name: GLOBAL-CONNECT
     type: select
     proxies:
