@@ -81,7 +81,7 @@ proxy-providers:
     path: proxy.yiun.xyz/provider-cn.yaml
     health-check:
       enable: true
-      interval: 600
+      interval: 300
       url: https://www.xiaomi.cn
   HK:
     type: http
@@ -89,7 +89,7 @@ proxy-providers:
     path: proxy.yiun.xyz/provider-hk.yaml
     health-check:
       enable: true
-      interval: 600
+      interval: 300
       url: https://www.xiaomi.cn
 rules:
   #GENERAL RULES  
