@@ -21,27 +21,20 @@ proxy-groups:
      - HONG KONG
   - name: AUTOMATIC
     type: url-test
-    url: http://io.mi.com/
+    url: https://www.xiaomi.cn/
     interval: 300
     use:
      - CN
      - HK
-  - name: AUTO-FALLBACK
-    type: fallback
-    url: io.mi.com
-    interval: 300
-    use:
-     - HK
-     - CN
   - name: CHINA
     type: url-test
-    url: http://io.mi.com/
+    url: https://www.xiaomi.cn/
     interval: 300
     use:
      - CN
   - name: HONG KONG
     type: url-test
-    url: http://io.mi.com/
+    url: https://www.xiaomi.cn/
     interval: 300
     use:
      - HK
@@ -51,7 +44,6 @@ proxy-groups:
       - AUTOMATIC
       - PROXY
       - SELECT-COUNTRY
-      - AUTO-FALLBACK
       - GLOBAL-CONNECT
   - name: CHINA-MUSIC
     type: select
@@ -59,7 +51,6 @@ proxy-groups:
       - AUTOMATIC
       - PROXY
       - SELECT-COUNTRY
-      - AUTO-FALLBACK
       - GLOBAL-CONNECT
   - name: CHINA-IP
     type: select
@@ -67,7 +58,6 @@ proxy-groups:
       - AUTOMATIC
       - PROXY
       - SELECT-COUNTRY
-      - AUTO-FALLBACK
       - GLOBAL-CONNECT
   - name: GLOBAL-CONNECT
     type: select
@@ -82,7 +72,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: http://io.mi.com/
+      url: https://www.xiaomi.cn/
   HK:
     type: http
     url: "https://proxy.yiun.xyz/clash/proxies?c=HK,type=vmess"
@@ -90,7 +80,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: http://io.mi.com/
+      url: https://www.xiaomi.cn/
 rules:
   #GENERAL RULES  
   - DOMAIN-SUFFIX,smtp,DIRECT
