@@ -96,7 +96,7 @@ proxy-providers:
   HK:
     type: http
     url: "https://proxy.yiun.xyz/clash/proxies?c=HK"
-    path: proxy.yiun.xyz/provider-hk.yaml
+    path: proxy.yiun.xyz/provider-cn.yaml
     health-check:
       enable: true
       interval: 300
@@ -104,7 +104,7 @@ proxy-providers:
   TW:
     type: http
     url: "https://proxy.yiun.xyz/clash/proxies?c=TW"
-    path: proxy.yiun.xyz/provider-tw.yaml
+    path: proxy.yiun.xyz/provider-cn.yaml
     health-check:
       enable: true
       interval: 300
