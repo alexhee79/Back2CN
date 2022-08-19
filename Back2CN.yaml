@@ -3,7 +3,7 @@ port: 7890
 socks-port: 7891
 allow-lan: true
 mode: rule
-log-level: info
+log-level: debug
 external-controller: 127.0.0.1:9090
 
 proxies:
@@ -21,27 +21,27 @@ proxy-groups:
      - HONG KONG
   - name: AUTOMATIC
     type: url-test
-    url: https://www.xiaomi.cn
+    url: http://io.mi.com/
     interval: 300
     use:
      - CN
      - HK
   - name: AUTO-FALLBACK
     type: fallback
-    url: https://www.xiaomi.cn
+    url: io.mi.com
     interval: 300
     use:
      - HK
      - CN
   - name: CHINA
     type: url-test
-    url: https://www.xiaomi.cn
+    url: http://io.mi.com/
     interval: 300
     use:
      - CN
   - name: HONG KONG
     type: url-test
-    url: https://www.xiaomi.cn
+    url: http://io.mi.com/
     interval: 300
     use:
      - HK
@@ -77,20 +77,20 @@ proxy-groups:
 proxy-providers:
   CN:
     type: http
-    url: "https://proxy.yiun.xyz/clash/proxies?c=CN"
+    url: "https://proxy.yiun.xyz/clash/proxies?c=CN,type=vmess"
     path: proxy.yiun.xyz/provider-cn.yaml
     health-check:
       enable: true
       interval: 300
-      url: https://www.xiaomi.cn
+      url: http://io.mi.com/
   HK:
     type: http
-    url: "https://proxy.yiun.xyz/clash/proxies?c=HK"
+    url: "https://proxy.yiun.xyz/clash/proxies?c=HK,type=vmess"
     path: proxy.yiun.xyz/provider-hk.yaml
     health-check:
       enable: true
       interval: 300
-      url: https://www.xiaomi.cn
+      url: http://io.mi.com/
 rules:
   #GENERAL RULES  
   - DOMAIN-SUFFIX,smtp,DIRECT
