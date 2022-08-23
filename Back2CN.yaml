@@ -14,30 +14,39 @@ proxy-groups:
     use:
      - CN
      - HK
+     - TW
   - name: SELECT-COUNTRY
     type: select
     proxies:
      - CHINA
      - HONG KONG
+     - TAIWAN
   - name: AUTOMATIC
     type: url-test
-    url: https://www.xiaomi.cn/
+    url: 'https://www.xiaomi.cn'
     interval: 300
     use:
      - CN
      - HK
+     - TW
   - name: CHINA
     type: url-test
-    url: https://www.xiaomi.cn/
+    url: 'https://www.xiaomi.cn'
     interval: 300
     use:
      - CN
   - name: HONG KONG
     type: url-test
-    url: https://www.xiaomi.cn/
+    url: 'https://www.xiaomi.cn'
     interval: 300
     use:
      - HK
+  - name: TAIWAN
+    type: url-test
+    url: 'https://www.xiaomi.cn'
+    interval: 300
+    use:
+     - TW
   - name: XIAOMI
     type: select
     proxies:
@@ -67,20 +76,28 @@ proxy-groups:
 proxy-providers:
   CN:
     type: http
-    url: "https://proxy.yiun.xyz/clash/proxies?c=CN,type=vmess"
-    path: proxy.yiun.xyz/provider-cn.yaml
+    url: "https://proxy.yugogo.xyz/clash/proxies?c=CN"
+    path: proxy.yugogo.xyz/provider-cn.yaml
     health-check:
       enable: true
-      interval: 300
-      url: https://www.xiaomi.cn/
+      interval: 600
+      url: 'https://www.xiaomi.cn'
   HK:
     type: http
-    url: "https://proxy.yiun.xyz/clash/proxies?c=HK,type=vmess"
-    path: proxy.yiun.xyz/provider-hk.yaml
+    url: "https://proxy.yugogo.xyz/clash/proxies?c=HK"
+    path: proxy.yugogo.xyz/provider-hk.yaml
     health-check:
       enable: true
-      interval: 300
-      url: https://www.xiaomi.cn/
+      interval: 600
+      url: 'https://www.xiaomi.cn'
+  TW:
+    type: http
+    url: "https://proxy.yugogo.xyz/clash/proxies?c=TW"
+    path: proxy.yugogo.xyz/provider-tw.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: 'https://www.xiaomi.cn'
 rules:
   #GENERAL RULES  
   - DOMAIN-SUFFIX,smtp,DIRECT
@@ -95,6 +112,7 @@ rules:
   # XIAOMI
   - DOMAIN-KEYWORD,xiaomi,XIAOMI
   - DOMAIN-SUFFIX,mi.com,XIAOMI
+  - DOMAIN-SUFFIX,mi.cn,XIAOMI
   - DOMAIN-SUFFIX,xiaomi.com,XIAOMI
   - DOMAIN-SUFFIX,xiaomi.net,XIAOMI
   - DOMAIN-SUFFIX,xiaomi.cn,XIAOMI
