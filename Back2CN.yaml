@@ -12,41 +12,41 @@ proxy-groups:
   - name: PROXY
     type: select
     use:
-     - CN
-     - HK
-     - TW
+     - P1
+     - P2
+     - P3
   - name: SELECT-COUNTRY
     type: select
     proxies:
-     - CHINA
-     - HONG KONG
-     - TAIWAN
+     - PROVIDER 1 - YIUN
+     - PROVIDER 2 - HEROKUAPP
+     - PROVIDER 3 - BIHAI
   - name: AUTOMATIC
     type: url-test
     url: 'https://api.io.mi.com'
     interval: 300
     use:
-     - CN
-     - HK
-     - TW
-  - name: CHINA
+     - P1
+     - P2
+     - P3
+  - name: PROVIDER 1 - YIUN
     type: url-test
     url: 'https://api.io.mi.com'
     interval: 300
     use:
-     - CN
-  - name: HONG KONG
+     - P1
+  - name: PROVIDER 2 - HEROKUAPP
     type: url-test
     url: 'https://api.io.mi.com'
     interval: 300
     use:
-     - HK
-  - name: TAIWAN
+     - P2
+  - name: PROVIDER 3 - BIHAI
     type: url-test
     url: 'https://api.io.mi.com'
     interval: 300
     use:
-     - TW
+     - P3
   - name: XIAOMI
     type: select
     proxies:
@@ -74,26 +74,26 @@ proxy-groups:
       - DIRECT
       - REJECT 
 proxy-providers:
-  CN:
+  P1:
     type: http
-    url: "https://proxy.yiun.xyz/clash/proxies?c=CN"
+    url: "https://proxy.yiun.xyz/clash/proxies?c=CN,HK,TW"
     path: proxy.yiun.xyz/provider-cn.yaml
     health-check:
       enable: true
       interval: 600
       url: 'https://api.io.mi.com'
-  HK:
+  P2:
     type: http
-    url: "https://proxy.yiun.xyz/clash/proxies?c=HK"
-    path: proxy.yiun.xyz/provider-hk.yaml
+    url: "https://hellopool.herokuapp.com/clash/proxies?c=CN,HK,TW"
+    path: hellopool.herokuapp.com/provider-cn.yaml
     health-check:
       enable: true
       interval: 600
       url: 'https://api.io.mi.com'
-  TW:
+  P3:
     type: http
-    url: "https://proxy.yiun.xyz/clash/proxies?c=TW"
-    path: proxy.yiun.xyz/provider-tw.yaml
+    url: "https://proxies.bihai.cf/clash/proxies?c=CN,HK,TW"
+    path: proxies.bihai.cf/provider-cn.yaml
     health-check:
       enable: true
       interval: 600
