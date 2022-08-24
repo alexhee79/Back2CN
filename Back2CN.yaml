@@ -23,7 +23,7 @@ proxy-groups:
      - TAIWAN
   - name: AUTOMATIC
     type: url-test
-    url: 'https://www.xiaomi.cn'
+    url: 'https://api.io.mi.com'
     interval: 300
     use:
      - CN
@@ -31,19 +31,19 @@ proxy-groups:
      - TW
   - name: CHINA
     type: url-test
-    url: 'https://www.xiaomi.cn'
+    url: 'https://api.io.mi.com'
     interval: 300
     use:
      - CN
   - name: HONG KONG
     type: url-test
-    url: 'https://www.xiaomi.cn'
+    url: 'https://api.io.mi.com'
     interval: 300
     use:
      - HK
   - name: TAIWAN
     type: url-test
-    url: 'https://www.xiaomi.cn'
+    url: 'https://api.io.mi.com'
     interval: 300
     use:
      - TW
@@ -81,7 +81,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'https://www.xiaomi.cn'
+      url: 'https://api.io.mi.com'
   HK:
     type: http
     url: "https://proxy.yiun.xyz/clash/proxies?c=HK"
@@ -89,7 +89,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'https://www.xiaomi.cn'
+      url: 'https://api.io.mi.com'
   TW:
     type: http
     url: "https://proxy.yiun.xyz/clash/proxies?c=TW"
@@ -97,7 +97,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'https://www.xiaomi.cn'
+      url: 'https://api.io.mi.com'
 rules:
   #GENERAL RULES  
   - DOMAIN-SUFFIX,smtp,DIRECT
