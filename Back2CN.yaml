@@ -1,11 +1,20 @@
 # BacktoCN
 port: 7890
 socks-port: 7891
-allow-lan: true
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+ipv6: false
 mode: rule
-log-level: info
-external-controller: 127.0.0.1:9090
-
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: ""
+bind-address: "*"
+unified-delay: true
+profile:
+  store-selected: true
+  store-fake-ip: true
 dns:
   enable: true
   ipv6: false
@@ -119,7 +128,7 @@ dns:
     - "*.ffxiv.com"
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
-
+    
 proxies:
 
 proxy-groups:
