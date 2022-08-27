@@ -6,7 +6,7 @@ mixed-port: 7893
 tproxy-port: 7895
 ipv6: false
 mode: rule
-log-level: silent
+log-level: info
 allow-lan: true
 external-controller: 0.0.0.0:9090
 secret: ""
@@ -138,7 +138,7 @@ proxy-groups:
      - P1
      - P2
      - P3
-  - name: SELECT-COUNTRY
+  - name: SELECT-PROVIDER
     type: select
     proxies:
      - PROVIDER 1 - YIUN
@@ -146,6 +146,15 @@ proxy-groups:
      - PROVIDER 3 - BIHAI
   - name: AUTOMATIC
     type: url-test
+    url: 'https://api.io.mi.com'
+    interval: 300
+    use:
+     - P1
+     - P2
+     - P3
+  - name: LOAD-BALANCE
+    type: load-balance
+    strategy: consistent-hashing #round-robin
     url: 'https://api.io.mi.com'
     interval: 300
     use:
@@ -174,22 +183,25 @@ proxy-groups:
     type: select
     proxies:
       - AUTOMATIC
+      - LOAD-BALANCE
       - PROXY
-      - SELECT-COUNTRY
+      - SELECT-PROVIDER
       - GLOBAL-CONNECT
   - name: CHINA-MUSIC
     type: select
     proxies:
       - AUTOMATIC
+      - LOAD-BALANCE
       - PROXY
-      - SELECT-COUNTRY
+      - SELECT-PROVIDER
       - GLOBAL-CONNECT
   - name: CHINA-IP
     type: select
     proxies: 
       - AUTOMATIC
+      - LOAD-BALANCE
       - PROXY
-      - SELECT-COUNTRY
+      - SELECT-PROVIDER
       - GLOBAL-CONNECT
   - name: GLOBAL-CONNECT
     type: select
