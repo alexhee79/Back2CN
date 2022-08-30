@@ -141,7 +141,7 @@ proxy-groups:
     type: select
     proxies:
      - PROVIDER 1 - YIUN
-     - PROVIDER 2 - BIHAI
+     - PROVIDER 2 - LAOWANG
   - name: AUTOMATIC
     type: url-test
     url: 'https://api.io.mi.com'
@@ -163,7 +163,7 @@ proxy-groups:
     interval: 300
     use:
      - P1
-  - name: PROVIDER 2 - BIHAI
+  - name: PROVIDER 2 - LAOWANG
     type: url-test
     url: 'https://api.io.mi.com'
     interval: 300
@@ -209,8 +209,8 @@ proxy-providers:
       url: 'https://api.io.mi.com'
   P2:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=CN,HK,TW"
-    path: proxies.bihai.cf/provider-cn.yaml
+    url: "https://proxypool.laowang.me/clash/proxies?c=CN,HK,TW"
+    path: proxypool.laowang.me/provider-cn.yaml
     health-check:
       enable: true
       interval: 600
