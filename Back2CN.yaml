@@ -204,11 +204,15 @@ proxy-groups:
     use:
      - P1
      - P2
+     - P3
+     - P4   
   - name: SELECT-PROVIDER
     type: select
     proxies:
-     - PROVIDER 1 - YIUN
+     - PROVIDER 1 - BIHAI
      - PROVIDER 2 - LAOWANG
+     - PROVIDER 3 - HELLOPOLL
+     - PROVIDER 4 - LONXIN 
   - name: AUTOMATIC
     type: url-test
     url: 'https://api.miwifi.com'
@@ -216,6 +220,8 @@ proxy-groups:
     use:
      - P1
      - P2
+     - P3
+     - P4
   - name: LOAD-BALANCE
     type: load-balance
     strategy: consistent-hashing #round-robin
@@ -224,7 +230,9 @@ proxy-groups:
     use:
      - P1
      - P2
-  - name: PROVIDER 1 - YIUN
+     - P3
+     - P4
+  - name: PROVIDER 1 - BIHAI
     type: url-test
     url: 'https://api.miwifi.com'
     interval: 300
@@ -236,6 +244,18 @@ proxy-groups:
     interval: 300
     use:
      - P2
+  - name: PROVIDER 3 - HELLOPOLL
+    type: url-test
+    url: 'https://api.miwifi.com'
+    interval: 300
+    use:
+     - P3
+  - name: PROVIDER 4 - LONXIN
+    type: url-test
+    url: 'https://api.miwifi.com'
+    interval: 300
+    use:
+     - P4
   - name: XIAOMI
     type: select
     proxies:
@@ -268,11 +288,11 @@ proxy-groups:
 proxy-providers:
   P1:
     type: http
-    url: "https://proxy.yiun.xyz/clash/proxies?c=CN,HK"
-    path: proxy.yiun.xyz/provider-cn.yaml
+    url: "https://proxies.bihai.cf/clash/proxies?c=CN,HK"
+    path: proxies.bihai.cf/provider-cn.yaml
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: 'https://api.miwifi.com'
   P2:
     type: http
@@ -280,7 +300,23 @@ proxy-providers:
     path: proxypool.laowang.me/provider-cn.yaml
     health-check:
       enable: true
-      interval: 300
+      interval: 600
+      url: 'https://api.miwifi.com'
+  P3:
+    type: http
+    url: "https://hellopool.herokuapp.com/clash/proxies?c=CN,HK"
+    path: hellopool.herokuapp.com/provider-cn.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: 'https://api.miwifi.com'
+  P4:
+    type: http
+    url: "https://fq.lonxin.net/clash/proxies?c=CN,HK"
+    path: fq.lonxin.net/provider-cn.yaml
+    health-check:
+      enable: true
+      interval: 600
       url: 'https://api.miwifi.com'
 rules:
   #GENERAL RULES  
