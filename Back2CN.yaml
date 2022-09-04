@@ -52,37 +52,37 @@ proxy-groups:
      - P6
   - name: PROVIDER 1 - BIHAI
     type: url-test
-    url: 'https://api.miwifi.com'
+    url: 'http://api.miwifi.com'
     interval: 300
     use:
      - P1
   - name: PROVIDER 2 - LAOWANG
     type: url-test
-    url: 'https://api.miwifi.com'
+    url: 'http://api.miwifi.com'
     interval: 300
     use:
      - P2
   - name: PROVIDER 3 - HELLOPOLL
     type: url-test
-    url: 'https://api.miwifi.com'
+    url: 'http://api.miwifi.com'
     interval: 300
     use:
      - P3
   - name: PROVIDER 4 - LONXIN
     type: url-test
-    url: 'https://api.miwifi.com'
+    url: 'http://api.miwifi.com'
     interval: 300
     use:
      - P4
   - name: PROVIDER 5 - SSPOOL
     type: url-test
-    url: 'https://api.miwifi.com'
+    url: 'http://api.miwifi.com'
     interval: 300
     use:
      - P5
   - name: PROVIDER 6 - YIUN
     type: url-test
-    url: 'https://api.miwifi.com'
+    url: 'http://api.miwifi.com'
     interval: 300
     use:
      - P6
@@ -124,7 +124,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'https://api.miwifi.com'
+      url: http://api.miwifi.com
   P2:
     type: http
     url: "https://proxypool.laowang.me/clash/proxies?c=CN,HK&speed=5"
@@ -133,7 +133,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'https://api.miwifi.com'
+      url: http://api.miwifi.com
   P3:
     type: http
     url: "https://hellopool.herokuapp.com/clash/proxies?c=CN,HK&speed=5"
@@ -142,7 +142,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'https://api.miwifi.com'
+      url: http://api.miwifi.com
   P4:
     type: http
     url: "https://fq.lonxin.net/clash/proxies?c=CN,HK&speed=5"
@@ -151,6 +151,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
+      url: http://api.miwifi.com
   P5:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=CN,HK&speed=5"
@@ -159,7 +160,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'https://api.miwifi.com'
+      url: http://api.miwifi.com
   P6:
     type: http
     url: "https://proxy.yiun.xyz/clash/proxies?c=CN,HK&speed=5"
@@ -168,7 +169,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'https://api.miwifi.com'
+      url: http://api.miwifi.com
 rules:
   #GENERAL RULES  
   - DOMAIN-SUFFIX,smtp,DIRECT
