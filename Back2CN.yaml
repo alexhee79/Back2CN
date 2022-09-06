@@ -145,54 +145,54 @@ proxy-groups:
 proxy-providers:
   P1:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=CN,HK&speed=5"
+    url: "https://proxies.bihai.cf/clash/proxies?c=CN,HK"
     path: proxies.bihai.cf/provider-cn.yaml
-    interval: 3600
+    interval: 7200
     health-check:
       enable: true
       interval: 600
       url: https://api.io.mi.com
   P2:
     type: http
-    url: "https://proxypool.laowang.me/clash/proxies?c=CN,HK&speed=5"
+    url: "https://proxypool.laowang.me/clash/proxies?c=CN,HK"
     path: proxypool.laowang.me/provider-cn.yaml
-    interval: 3600
+    interval: 7200
     health-check:
       enable: true
       interval: 600
       url: https://api.io.mi.com
   P3:
     type: http
-    url: "https://hellopool.herokuapp.com/clash/proxies?c=CN,HK&speed=5"
+    url: "https://hellopool.herokuapp.com/clash/proxies?c=CN,HK"
     path: hellopool.herokuapp.com/provider-cn.yaml
-    interval: 3600
+    interval: 7200
     health-check:
       enable: true
       interval: 600
       url: https://api.io.mi.com
   P4:
     type: http
-    url: "https://fq.lonxin.net/clash/proxies?c=CN,HK&speed=5"
+    url: "https://fq.lonxin.net/clash/proxies?c=CN,HK"
     path: fq.lonxin.net/provider-cn.yaml
-    interval: 3600
+    interval: 7200
     health-check:
       enable: true
       interval: 600
       url: https://api.io.mi.com
   P5:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=CN,HK&speed=5"
+    url: "https://sspool.herokuapp.com/clash/proxies?c=CN,HK"
     path: sspool.herokuapp.com/provider-cn.yaml
-    interval: 3600
+    interval: 7200
     health-check:
       enable: true
       interval: 600
       url: https://api.io.mi.com
   P6:
     type: http
-    url: "https://proxy.yiun.xyz/clash/proxies?c=CN,HK&speed=5"
+    url: "https://proxy.yiun.xyz/clash/proxies?c=CN,HK"
     path: proxy.yiun.xyz/provider-cn.yaml
-    interval: 3600
+    interval: 7200
     health-check:
       enable: true
       interval: 600
