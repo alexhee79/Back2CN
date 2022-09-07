@@ -6,6 +6,256 @@ mixed-port: 7893
 tproxy-port: 7895
 ipv6: false
 mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: ""
+bind-address: "*"
+unified-delay: true
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  use-host: true
+  enhanced-mode: fake-ip
+  listen: 0.0.0.0:7874
+  nameserver:
+    - 8.8.8.8
+    - 1.0.0.1
+    - https://dns.google/dns-query
+  fallback:
+    - 1.1.1.1
+    - 8.8.4.4
+    - https://cloudflare-dns.com/dns-query
+    - 112.215.203.254
+  default-nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+    - 112.215.203.254
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - "*.time.edu.cn"
+    - "*.ntp.org.cn"
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - "*.kuwo.cn"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - msftconnecttest.com
+    - msftncsi.com
+    - localhost.ptlogin2.qq.com
+    - localhost.sec.qq.com
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - xnotify.xboxlive.com
+    - +.battlenet.com.cn
+    - +.wotgame.cn
+    - +.wggames.cn
+    - +.wowsgame.cn
+    - +.wargaming.net
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - +.stun.*.*
+    - +.stun.*.*.*
+    - +.stun.*.*.*.*
+    - heartbeat.belkin.com
+    - "*.linksys.com"
+    - "*.linksyssmartwifi.com"
+    - "*.router.asus.com"
+    - mesu.apple.com
+    - swscan.apple.com
+    - swquery.apple.com
+    - swdownload.apple.com
+    - swcdn.apple.com
+    - swdist.apple.com
+    - lens.l.google.com
+    - stun.l.google.com
+    - +.nflxvideo.net
+    - "*.square-enix.com"
+    - "*.finalfantasyxiv.com"
+    - "*.ffxiv.com"
+    - "*.mcdn.bilivideo.cn"
+    - +.media.dssott.com
+
+proxies:
+
+proxy-groups:
+  - name: PROXY
+    type: select
+    use:
+     - P1
+     - P2
+     - P3
+     - P4
+     - P5
+     - P6     
+  - name: SELECT-PROVIDER
+    type: select
+    proxies:
+     - PROVIDER 1 - BIHAI
+     - PROVIDER 2 - LAOWANG
+     - PROVIDER 3 - HELLOPOLL
+     - PROVIDER 4 - LONXIN
+     - PROVIDER 5 - SSPOOL
+     - PROVIDER 6 - YIUN     
+  - name: AUTOMATIC
+    type: url-test
+    url: 'https://api.io.mi.com'
+    interval: 300
+    use:
+     - P1
+     - P2
+     - P3
+     - P4
+     - P5
+     - P6 
+  - name: LOAD-BALANCE
+    type: load-balance
+    strategy: consistent-hashing #round-robin
+    url: 'https://api.io.mi.com'
+    interval: 300
+    use:
+     - P1
+     - P2
+     - P3
+     - P4
+     - P5
+     - P6
+  - name: PROVIDER 1 - BIHAI
+    type: url-test
+    url: 'https://api.io.mi.com'
+    interval: 300
+    use:
+     - P1
+  - name: PROVIDER 2 - LAOWANG
+    type: url-test
+    url: 'https://api.io.mi.com'
+    interval: 300
+    use:
+     - P2
+  - name: PROVIDER 3 - HELLOPOLL
+    type: url-test
+    url: 'https://api.io.mi.com'
+    interval: 300
+    use:
+     - P3
+  - name: PROVIDER 4 - LONXIN
+    type: url-test
+    url: 'https://api.io.mi.com'
+    interval: 300
+    use:
+     - P4
+  - name: PROVIDER 5 - SSPOOL
+    type: url-test
+    url: 'https://api.io.mi.com'
+    interval: 300
+    use:
+     - P5
+  - name: PROVIDER 6 - YIUN
+    type: url-test
+    url: 'https://api.io.mi.com'
+    interval: 300
+    use:
+     - P6
+  - name: XIAOMI
+    type: select
+    proxies:
+      - AUTOMATIC
+      - LOAD-BALANCE
+      - PROXY
+      - SELECT-PROVIDER
+      - GLOBAL-CONNECT
+  - name: CHINA-MUSIC
+    type: select
+    proxies:
+      - AUTOMATIC
+      - LOAD-BALANCE
+      - PROXY
+      - SELECT-PROVIDER
+      - GLOBAL-CONNECT
+  - name: CHINA-IP
+    type: select
+    proxies: 
+      - AUTOMATIC
+      - LOAD-BALANCE
+      - PROXY
+      - SELECT-PROVIDER
+      - GLOBAL-CONNECT
+  - name: GLOBAL-CONNECT
+    type: select
+    proxies:
+      - DIRECT
+      - REJECT 
+proxy-providers:
+  P1:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies"
+    path: proxies.bihai.cf/provider-cn.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 600
+      url: https://api.io.mi.com
+  P2:# BacktoCN
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+ipv6: false
+mode: rule
 log-level: info
 allow-lan: true
 external-controller: 0.0.0.0:9090
@@ -147,7 +397,7 @@ proxy-providers:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=CN,HK"
     path: proxies.bihai.cf/provider-cn.yaml
-    interval: 7200
+    interval: 3600
     health-check:
       enable: true
       interval: 600
@@ -156,7 +406,7 @@ proxy-providers:
     type: http
     url: "https://proxypool.laowang.me/clash/proxies?c=CN,HK"
     path: proxypool.laowang.me/provider-cn.yaml
-    interval: 7200
+    interval: 3600
     health-check:
       enable: true
       interval: 600
@@ -165,7 +415,7 @@ proxy-providers:
     type: http
     url: "https://hellopool.herokuapp.com/clash/proxies?c=CN,HK"
     path: hellopool.herokuapp.com/provider-cn.yaml
-    interval: 7200
+    interval: 3600
     health-check:
       enable: true
       interval: 600
@@ -174,7 +424,7 @@ proxy-providers:
     type: http
     url: "https://fq.lonxin.net/clash/proxies?c=CN,HK"
     path: fq.lonxin.net/provider-cn.yaml
-    interval: 7200
+    interval: 3600
     health-check:
       enable: true
       interval: 600
@@ -183,7 +433,7 @@ proxy-providers:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=CN,HK"
     path: sspool.herokuapp.com/provider-cn.yaml
-    interval: 7200
+    interval: 3600
     health-check:
       enable: true
       interval: 600
@@ -192,7 +442,82 @@ proxy-providers:
     type: http
     url: "https://proxy.yiun.xyz/clash/proxies?c=CN,HK"
     path: proxy.yiun.xyz/provider-cn.yaml
-    interval: 7200
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 600
+      url: https://api.io.mi.com
+rules:
+  #GENERAL RULES  
+  - DOMAIN-SUFFIX,smtp,DIRECT
+  - DOMAIN-KEYWORD,aria2,DIRECT
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+
+  # XIAOMI
+  - DOMAIN-KEYWORD,xiaomi,XIAOMI
+  - DOMAIN-SUFFIX,mi.com,XIAOMI
+  - DOMAIN-SUFFIX,xiaomi.com,XIAOMI
+  - DOMAIN-SUFFIX,xiaomi.net,XIAOMI
+  - DOMAIN-SUFFIX,xiaomi.cn,XIAOMI
+  - DOMAIN-SUFFIX,xiaomicp.com,XIAOMI
+  - DOMAIN-SUFFIX,miwifi.com,XIAOMI
+  - DOMAIN-SUFFIX,iotcplatform.com,XIAOMI
+  
+  # CHINA-MUSIC
+  - DOMAIN-SUFFIX,126.net,CHINA-MUSIC
+  - DOMAIN-SUFFIX,music.163.com,CHINA-MUSIC
+  - DOMAIN-SUFFIX,music.qq.com,CHINA-MUSIC
+  - DOMAIN-SUFFIX,tc.qq.com,CHINA-MUSIC
+  
+  # Others
+  - GEOIP,CN,CHINA-IP
+  - MATCH,GLOBAL-CONNECT
+
+    type: http
+    url: "https://proxypool.laowang.me/clash/proxies"
+    path: proxypool.laowang.me/provider-cn.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 600
+      url: https://api.io.mi.com
+  P3:
+    type: http
+    url: "https://hellopool.herokuapp.com/clash/proxies"
+    path: hellopool.herokuapp.com/provider-cn.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 600
+      url: https://api.io.mi.com
+  P4:
+    type: http
+    url: "https://fq.lonxin.net/clash/proxies"
+    path: fq.lonxin.net/provider-cn.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 600
+      url: https://api.io.mi.com
+  P5:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies"
+    path: sspool.herokuapp.com/provider-cn.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 600
+      url: https://api.io.mi.com
+  P6:
+    type: http
+    url: "https://proxy.yiun.xyz/clash/proxies"
+    path: proxy.yiun.xyz/provider-cn.yaml
+    interval: 3600
     health-check:
       enable: true
       interval: 600
