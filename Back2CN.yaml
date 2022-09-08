@@ -20,7 +20,7 @@ dns:
   ipv6: false
   use-host: true
   enhanced-mode: fake-ip
-  listen: 0.0.0.0:7874
+  listen: 0.0.0.0:53
   nameserver:
     - 8.8.8.8
     - 1.0.0.1
@@ -46,7 +46,6 @@ dns:
     - "*.home.arpa"
     - time.*.com
     - time.*.gov
-    - time.*.edu.cn
     - time.*.apple.com
     - time1.*.com
     - time2.*.com
@@ -67,34 +66,10 @@ dns:
     - "*.ntp.org.cn"
     - +.pool.ntp.org
     - time1.cloud.tencent.com
-    - music.163.com
-    - "*.music.163.com"
-    - "*.126.net"
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - "*.kuwo.cn"
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - y.qq.com
-    - "*.y.qq.com"
-    - streamoc.music.tc.qq.com
-    - mobileoc.music.tc.qq.com
-    - isure.stream.qqmusic.qq.com
-    - dl.stream.qqmusic.qq.com
-    - aqqmusic.tc.qq.com
-    - amobile.music.tc.qq.com
-    - "*.xiami.com"
-    - "*.music.migu.cn"
-    - music.migu.cn
     - "*.msftconnecttest.com"
     - "*.msftncsi.com"
     - msftconnecttest.com
     - msftncsi.com
-    - localhost.ptlogin2.qq.com
-    - localhost.sec.qq.com
     - +.srv.nintendo.net
     - +.stun.playstation.net
     - xbox.*.microsoft.com
@@ -126,7 +101,6 @@ dns:
     - "*.square-enix.com"
     - "*.finalfantasyxiv.com"
     - "*.ffxiv.com"
-    - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
 
 proxies:
