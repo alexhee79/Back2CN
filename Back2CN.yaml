@@ -39,7 +39,7 @@ proxy-groups:
      - PROVIDER 6 - YIUN     
   - name: AUTOMATIC
     type: url-test
-    url: 'http://www.gstatic.com/generate_204'
+    url: 'https://'
     interval: 300
     use:
      - P1
@@ -50,37 +50,37 @@ proxy-groups:
      - P6
   - name: PROVIDER 1 - BIHAI
     type: url-test
-    url: 'http://www.gstatic.com/generate_204'
+    url: 'https://api.io.mi.com'
     interval: 300
     use:
      - P1
   - name: PROVIDER 2 - LAOWANG
     type: url-test
-    url: 'http://www.gstatic.com/generate_204'
+    url: 'https://api.io.mi.com'
     interval: 300
     use:
      - P2
   - name: PROVIDER 3 - HELLOPOLL
     type: url-test
-    url: 'http://www.gstatic.com/generate_204'
+    url: 'https://api.io.mi.com'
     interval: 300
     use:
      - P3
   - name: PROVIDER 4 - TOSHIKI
     type: url-test
-    url: 'http://www.gstatic.com/generate_204'
+    url: 'https://api.io.mi.com'
     interval: 300
     use:
      - P4
   - name: PROVIDER 5 - SSPOOL
     type: url-test
-    url: 'http://www.gstatic.com/generate_204'
+    url: 'https://api.io.mi.com'
     interval: 300
     use:
      - P5
   - name: PROVIDER 6 - YIUN
     type: url-test
-    url: 'http://www.gstatic.com/generate_204'
+    url: 'https://api.io.mi.com'
     interval: 300
     use:
      - P6
@@ -113,58 +113,58 @@ proxy-groups:
 proxy-providers:
   P1:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=CN"
+    url: "https://proxies.bihai.cf/clash/proxies?c=CN,HK"
     path: proxies.bihai.cf/provider-cn.yaml
     interval: 7200
     health-check:
       enable: true
       interval: 600
-      url: http://www.gstatic.com/generate_204
+      url: https://api.io.mi.com
   P2:
     type: http
-    url: "https://proxypool.laowang.me/clash/proxies?c=CN"
+    url: "https://proxypool.laowang.me/clash/proxies?c=CN,HK"
     path: proxypool.laowang.me/provider-cn.yaml
     interval: 7200
     health-check:
       enable: true
       interval: 600
-      url: http://www.gstatic.com/generate_204
+      url: https://api.io.mi.com
   P3:
     type: http
-    url: "https://hellopool.herokuapp.com/clash/proxies?c=CN"
+    url: "https://hellopool.herokuapp.com/clash/proxies?c=CN,HK"
     path: hellopool.herokuapp.com/provider-cn.yaml
     interval: 7200
     health-check:
       enable: true
       interval: 600
-      url: http://www.gstatic.com/generate_204
+      url: https://api.io.mi.com
   P4:
     type: http
-    url: "https://proxypool.toshiki.top/clash/proxies?c=CN"
+    url: "https://proxypool.toshiki.top/clash/proxies?c=CN,HK"
     path: proxypool.toshiki.top/provider-cn.yaml
     interval: 7200
     health-check:
       enable: true
       interval: 600
-      url: http://www.gstatic.com/generate_204
+      url: https://api.io.mi.com
   P5:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=CN"
+    url: "https://sspool.herokuapp.com/clash/proxies?c=CN,HK"
     path: sspool.herokuapp.com/provider-cn.yaml
     interval: 7200
     health-check:
       enable: true
       interval: 600
-      url: http://www.gstatic.com/generate_204
+      url: https://api.io.mi.com
   P6:
     type: http
-    url: "https://proxy.yiun.xyz/clash/proxies?c=CN"
+    url: "https://proxy.yiun.xyz/clash/proxies?c=CN,HK"
     path: proxy.yiun.xyz/provider-cn.yaml
     interval: 7200
     health-check:
       enable: true
       interval: 600
-      url: http://www.gstatic.com/generate_204
+      url: https://api.io.mi.com
 rules:
   #GENERAL RULES  
   - DOMAIN-SUFFIX,smtp,DIRECT
@@ -188,7 +188,7 @@ rules:
   
   # CHINA-MUSIC
   - DOMAIN-SUFFIX,126.net,CHINA-MUSIC
-  - DOMAIN-SUFFIX,music.163.com,CHINA-MUSIC
+  - DOMAIN-SUFFIX,https://api.io.mi.com,CHINA-MUSIC
   - DOMAIN-SUFFIX,music.qq.com,CHINA-MUSIC
   - DOMAIN-SUFFIX,tc.qq.com,CHINA-MUSIC
   
