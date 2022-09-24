@@ -68,6 +68,8 @@ dns:
     - "*.ipv6.microsoft.com"
     - "*.*.xboxlive.com"
     - speedtest.cros.wr.pvp.net
+    - "*.shopeemobile.com"
+    - "*.*.shopeemobile.com"
   default-nameserver:
     - 9.9.9.9
   nameserver:
@@ -251,37 +253,37 @@ proxy-groups:
      - P6
   - name: PROVIDER 1 - BIHAI
     type: url-test
-    url: 'https://api.io.mi.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
      - P1
   - name: PROVIDER 2 - LAOWANG
     type: url-test
-    url: 'https://api.io.mi.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
      - P2
   - name: PROVIDER 3 - HELLOPOLL
     type: url-test
-    url: 'https://api.io.mi.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
      - P3
   - name: PROVIDER 4 - TOSHIKI
     type: url-test
-    url: 'https://api.io.mi.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
      - P4
   - name: PROVIDER 5 - SSPOOL
     type: url-test
-    url: 'https://api.io.mi.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
      - P5
   - name: PROVIDER 6 - YIUN
     type: url-test
-    url: 'https://api.io.mi.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
      - P6
@@ -320,7 +322,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: https://api.io.mi.com
+      url: http://www.gstatic.com/generate_204
   P2:
     type: http
     url: "https://proxypool.laowang.me/clash/proxies?c=CN,HK"
@@ -329,7 +331,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: https://api.io.mi.com
+      url: http://www.gstatic.com/generate_204
   P3:
     type: http
     url: "https://hellopool.herokuapp.com/clash/proxies?c=CN,HK"
@@ -338,7 +340,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: https://api.io.mi.com
+      url: http://www.gstatic.com/generate_204
   P4:
     type: http
     url: "https://proxypool.toshiki.top/clash/proxies?c=CN,HK"
@@ -347,7 +349,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: https://api.io.mi.com
+      url: http://www.gstatic.com/generate_204
   P5:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=CN,HK"
@@ -356,7 +358,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: https://api.io.mi.com
+      url: http://www.gstatic.com/generate_204
   P6:
     type: http
     url: "https://proxy.yiun.xyz/clash/proxies?c=CN,HK"
@@ -365,7 +367,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: https://api.io.mi.com
+      url: http://www.gstatic.com/generate_204
 rules:
   #GENERAL RULES  
   - DOMAIN-SUFFIX,smtp,DIRECT
@@ -389,7 +391,7 @@ rules:
   
   # CHINA-MUSIC
   - DOMAIN-SUFFIX,126.net,CHINA-MUSIC
-  - DOMAIN-SUFFIX,https://api.io.mi.com,CHINA-MUSIC
+  - DOMAIN-SUFFIX,http://www.gstatic.com/generate_204,CHINA-MUSIC
   - DOMAIN-SUFFIX,music.qq.com,CHINA-MUSIC
   - DOMAIN-SUFFIX,tc.qq.com,CHINA-MUSIC
   
