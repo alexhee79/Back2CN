@@ -33,7 +33,7 @@ proxy-groups:
     proxies:
      - PROVIDER 1 - BIHAI
      - PROVIDER 2 - LAOWANG
-     - PROVIDER 3 - HELLOPOLL
+     - PROVIDER 3 - POSYAO
      - PROVIDER 4 - TOSHIKI
      - PROVIDER 5 - SSPOOL
      - PROVIDER 6 - YIUN     
@@ -60,7 +60,7 @@ proxy-groups:
     interval: 300
     use:
      - P2
-  - name: PROVIDER 3 - HELLOPOLL
+  - name: PROVIDER 3 - POSYAO
     type: url-test
     url: 'https://api.io.mi.com'
     interval: 300
@@ -131,8 +131,8 @@ proxy-providers:
       url: https://api.io.mi.com
   P3:
     type: http
-    url: "https://hellopool.herokuapp.com/clash/proxies?c=CN,HK"
-    path: hellopool.herokuapp.com/provider-cn.yaml
+    url: "https://klausvpn.posyao.com/clash/proxies?c=CN,HK"
+    path: klausvpn.posyao.com/provider-cn.yaml
     interval: 7200
     health-check:
       enable: true
