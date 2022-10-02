@@ -44,28 +44,24 @@ proxy-groups:
     proxies:
       - AUTOMATIC
       - PROXY
-      - SELECT-PROVIDER
       - GLOBAL-CONNECT
   - name: TUYA
     type: select
     proxies:
       - AUTOMATIC
       - PROXY
-      - SELECT-PROVIDER
       - GLOBAL-CONNECT
   - name: CHINA-MUSIC
     type: select
     proxies:
       - AUTOMATIC
       - PROXY
-      - SELECT-PROVIDER
       - GLOBAL-CONNECT
   - name: CHINA-IP
     type: select
     proxies: 
       - AUTOMATIC
       - PROXY
-      - SELECT-PROVIDER
       - GLOBAL-CONNECT
   - name: GLOBAL-CONNECT
     type: select
