@@ -30,7 +30,7 @@ proxy-groups:
      - P6     
   - name: AUTOMATIC
     type: url-test
-    url: 'http://api.io.mi.com'
+    url: 'https://api.io.mi.com'
     interval: 300
     use:
      - P1
@@ -77,7 +77,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: http://api.io.mi.com
+      url: https://api.io.mi.com
   P2:
     type: http
     url: "https://proxypool.laowang.me/clash/proxies?c=CN,HK"
@@ -86,7 +86,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: http://api.io.mi.com
+      url: https://api.io.mi.com
   P3:
     type: http
     url: "https://klausvpn.posyao.com/clash/proxies?c=CN,HK"
@@ -95,7 +95,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: http://api.io.mi.com
+      url: https://api.io.mi.com
   P4:
     type: http
     url: "https://proxypool.toshiki.top/clash/proxies?c=CN,HK"
@@ -104,7 +104,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: http://api.io.mi.com
+      url: https://api.io.mi.com
   P5:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=CN,HK"
@@ -113,7 +113,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: http://api.io.mi.com
+      url: https://api.io.mi.com
   P6:
     type: http
     url: "https://proxy.yiun.xyz/clash/proxies?c=CN,HK"
@@ -122,7 +122,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: http://api.io.mi.com
+      url: https://api.io.mi.com
 rules:
   #GENERAL RULES  
   - DOMAIN-SUFFIX,smtp,DIRECT
