@@ -27,7 +27,8 @@ proxy-groups:
      - P3
      - P4
      - P5
-     - P6     
+     - P6
+     - P7     
   - name: AUTOMATIC
     type: url-test
     url: 'https://www.xiaomi.cn'
@@ -39,28 +40,45 @@ proxy-groups:
      - P4
      - P5
      - P6
+     - P7
+  - name: FALLBACK-AUTO
+    type: fallback
+    url: 'https://www.xiaomi.cn'
+    interval: 300
+    use:
+     - P1
+     - P2
+     - P3
+     - P4
+     - P5
+     - P6
+     - P7
   - name: XIAOMI
     type: select
     proxies:
       - AUTOMATIC
+      - FALLBACK-AUTO
       - PROXY
       - GLOBAL-CONNECT
   - name: TUYA
     type: select
     proxies:
       - AUTOMATIC
+      - FALLBACK-AUTO
       - PROXY
       - GLOBAL-CONNECT
   - name: CHINA-MUSIC
     type: select
     proxies:
       - AUTOMATIC
+      - FALLBACK-AUTO
       - PROXY
       - GLOBAL-CONNECT
   - name: CHINA-IP
     type: select
     proxies: 
       - AUTOMATIC
+      - FALLBACK-AUTO
       - PROXY
       - GLOBAL-CONNECT
   - name: GLOBAL-CONNECT
@@ -73,55 +91,64 @@ proxy-providers:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=CN,HK"
     path: proxies.bihai.cf/provider-cn.yaml
-    interval: 7200
+    interval: 3600
     health-check:
       enable: true
-      interval: 600
+      interval: 300
       url: https://www.xiaomi.cn
   P2:
     type: http
     url: "https://proxypool.laowang.me/clash/proxies?c=CN,HK"
     path: proxypool.laowang.me/provider-cn.yaml
-    interval: 7200
+    interval: 3600
     health-check:
       enable: true
-      interval: 600
+      interval: 300
       url: https://www.xiaomi.cn
   P3:
     type: http
     url: "https://klausvpn.posyao.com/clash/proxies?c=CN,HK"
     path: klausvpn.posyao.com/provider-cn.yaml
-    interval: 7200
+    interval: 300
     health-check:
       enable: true
-      interval: 600
+      interval: 300
       url: https://www.xiaomi.cn
   P4:
     type: http
     url: "https://proxypool.toshiki.top/clash/proxies?c=CN,HK"
     path: proxypool.toshiki.top/provider-cn.yaml
-    interval: 7200
+    interval: 3600
     health-check:
       enable: true
-      interval: 600
+      interval: 300
       url: https://www.xiaomi.cn
   P5:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=CN,HK"
     path: sspool.herokuapp.com/provider-cn.yaml
-    interval: 7200
+    interval: 3600
     health-check:
       enable: true
-      interval: 600
+      interval: 300
       url: https://www.xiaomi.cn
   P6:
     type: http
     url: "https://proxy.yiun.xyz/clash/proxies?c=CN,HK"
     path: proxy.yiun.xyz/provider-cn.yaml
-    interval: 7200
+    interval: 3600
     health-check:
       enable: true
-      interval: 600
+      interval: 300
+      url: https://www.xiaomi.cn
+  P7:
+    type: http
+    url: "https://hellopool.herokuapp.com/clash/proxies?c=CN,HK"
+    path: hellopool.herokuapp.com/provider-cn.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 300
       url: https://www.xiaomi.cn
 rules:
   #GENERAL RULES  
