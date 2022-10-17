@@ -41,8 +41,8 @@ proxy-groups:
      - P5
      - P6
      - P7
-  - name: FALLBACK-AUTO
-    type: fallback
+  - name: AUTO-LOAD-BALANCE
+    type: load-balance
     url: 'https://www.xiaomi.cn'
     interval: 300
     use:
@@ -57,28 +57,28 @@ proxy-groups:
     type: select
     proxies:
       - AUTOMATIC
-      - FALLBACK-AUTO
+      - AUTO-LOAD-BALANCE
       - PROXY
       - GLOBAL-CONNECT
   - name: TUYA
     type: select
     proxies:
       - AUTOMATIC
-      - FALLBACK-AUTO
+      - AUTO-LOAD-BALANCE
       - PROXY
       - GLOBAL-CONNECT
   - name: CHINA-MUSIC
     type: select
     proxies:
       - AUTOMATIC
-      - FALLBACK-AUTO
+      - AUTO-LOAD-BALANCE
       - PROXY
       - GLOBAL-CONNECT
   - name: CHINA-IP
     type: select
     proxies: 
       - AUTOMATIC
-      - FALLBACK-AUTO
+      - AUTO-LOAD-BALANCE
       - PROXY
       - GLOBAL-CONNECT
   - name: GLOBAL-CONNECT
