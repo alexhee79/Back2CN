@@ -104,7 +104,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: url: http://www.gstatic.com/generate_204
+      url: http://www.gstatic.com/generate_204
   P3:
     type: http
     url: "https://klausvpn.posyao.com/clash/proxies?c=CN,HK"
