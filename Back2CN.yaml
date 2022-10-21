@@ -29,6 +29,7 @@ proxy-groups:
      - P5
      - P6
      - P7
+     - P8
   - name: AUTOMATIC
     type: url-test
     url: 'https://www.xiaomi.cn'
@@ -41,6 +42,7 @@ proxy-groups:
      - P5
      - P6
      - P7
+     - P8
   - name: AUTO-LOAD-BALANCE
     type: load-balance
     url: 'https://www.xiaomi.cn'
@@ -53,6 +55,7 @@ proxy-groups:
      - P5
      - P6
      - P7
+     - P8
   - name: XIAOMI
     type: select
     proxies:
@@ -148,6 +151,15 @@ proxy-providers:
     type: http
     url: "https://hellopool.herokuapp.com/clash/proxies?c=CN,HK"
     path: hellopool.herokuapp.com/provider-cn.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.xiaomi.cn
+  P8:
+    type: http
+    url: "https://vercel.daycat.space/Clash.yaml"
+    path: ./provider.yaml
     interval: 3600
     health-check:
       enable: true
