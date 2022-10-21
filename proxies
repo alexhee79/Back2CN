@@ -1,9 +1,6 @@
 proxies:
  - {name: CH 1, server: 165.154.244.29, port: 443, type: vmess, uuid: e13a9c42-54d6-4fe1-9578-0ca3bfc17122, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: "", udp: true}
- - {name: CH 2, server: 103.137.22.44, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 55011c8548ff, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness018.fnline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
- - {name: CH 3, server: s1.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
- - {name: CH 4, server: fn600mlines021.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 0ac84efef442, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines021.fnline.info, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
- - {name: CH 5, server: fn600mliness017.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness017.fnline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
- - {name: CH 6, server: 120.55.63.83, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
- - {name: CH 7, server: 103.172.116.5, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
- - {name: CH 8, server: s2.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: CH 2, server: s1.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: CH 3, server: 103.172.116.5, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+ - {name: CH 4, server: 103.172.116.5, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+ - {name: CH 5, server: 103.172.116.5, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
