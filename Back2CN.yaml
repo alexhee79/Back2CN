@@ -28,7 +28,7 @@ proxy-groups:
      - P4
      - P5
      - P6
-     - P7     
+     - P7
   - name: AUTOMATIC
     type: url-test
     url: 'https://www.xiaomi.cn'
@@ -92,9 +92,9 @@ proxy-groups:
 proxy-providers:
   P1:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=CN,HK"
-    path: proxies.bihai.cf/provider-cn.yaml
-    interval: 3600
+    url: "https://raw.githubusercontent.com/alexhee79/Back2CN/main/proxies"
+    path: ./provider.yaml
+    interval: 300
     health-check:
       enable: true
       interval: 300
@@ -110,9 +110,9 @@ proxy-providers:
       url: https://www.xiaomi.cn
   P3:
     type: http
-    url: "https://klausvpn.posyao.com/clash/proxies?c=CN,HK"
-    path: klausvpn.posyao.com/provider-cn.yaml
-    interval: 300
+    url: "https://proxies.bihai.cf/clash/proxies?c=CN,HK"
+    path: proxies.bihai.cf/provider-cn.yaml
+    interval: 3600
     health-check:
       enable: true
       interval: 300
