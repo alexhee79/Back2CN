@@ -158,7 +158,7 @@ proxy-providers:
       url: https://www.xiaomi.cn
   P8:
     type: http
-    url: "https://vercel.daycat.space/Clash.yaml"
+    url: "https://v1.mk/wcnNmi2"
     path: ./provider.yaml
     interval: 3600
     health-check:
