@@ -149,8 +149,8 @@ proxy-providers:
       url: https://www.xiaomi.cn
   P7:
     type: http
-    url: "https://hellopool.herokuapp.com/clash/proxies?c=CN,HK"
-    path: hellopool.herokuapp.com/provider-cn.yaml
+    url: "https://v1.mk/jwArVjS"
+    path: ./provider.yaml
     interval: 3600
     health-check:
       enable: true
@@ -158,7 +158,7 @@ proxy-providers:
       url: https://www.xiaomi.cn
   P8:
     type: http
-    url: "https://v1.mk/wcnNmi2"
+    url: "https://v1.mk/pniQw1l"
     path: ./provider.yaml
     interval: 3600
     health-check:
