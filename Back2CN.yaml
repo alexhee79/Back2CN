@@ -34,6 +34,7 @@ proxy-groups:
     type: url-test
     url: 'https://www.xiaomi.cn'
     interval: 300
+    tolerance: 100
     use:
      - P1
      - P2
@@ -47,6 +48,7 @@ proxy-groups:
     type: load-balance
     url: 'https://www.xiaomi.cn'
     interval: 300
+    tolerance: 100
     use:
      - P1
      - P2
@@ -97,7 +99,7 @@ proxy-providers:
     type: http
     url: "https://raw.githubusercontent.com/alexhee79/Back2CN/main/proxies"
     path: ./provider.yaml
-    interval: 300
+    interval: 3600
     health-check:
       enable: true
       interval: 300
