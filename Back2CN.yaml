@@ -25,7 +25,6 @@ proxy-groups:
      - P1
      - P2
      - P3
-     - P4
   - name: AUTOMATIC
     type: url-test
     url: 'https://www.xiaomi.cn'
@@ -35,7 +34,6 @@ proxy-groups:
      - P1
      - P2
      - P3
-     - P4
   - name: AUTO-LOAD-BALANCE
     type: load-balance
     url: 'https://www.xiaomi.cn'
@@ -45,7 +43,6 @@ proxy-groups:
      - P1
      - P2
      - P3
-     - P4
   - name: XIAOMI
     type: select
     proxies:
@@ -85,15 +82,6 @@ proxy-groups:
 proxy-providers:
   P1:
     type: http
-    url: "https://raw.githubusercontent.com/alexhee79/Back2CN/main/proxies"
-    path: ./provider.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      interval: 300
-      url: https://www.xiaomi.cn
-  P2:
-    type: http
     url: "http://klausvpn.posyao.com/clash/proxies?c=CN,HK"
     path: klausvpn.posyao.com/provider-cn.yaml
     interval: 3600
@@ -101,7 +89,7 @@ proxy-providers:
       enable: true
       interval: 300
       url: https://www.xiaomi.cn
-  P3:
+  P2:
     type: http
     url: "https://proxy.yiun.xyz/clash/proxies?c=CN,HK"
     path: proxy.yiun.xyz/provider-cn.yaml
@@ -110,7 +98,7 @@ proxy-providers:
       enable: true
       interval: 300
       url: https://www.xiaomi.cn
-  P4:
+  P3:
     type: http
     url: "https://suo.yt/GwvvLDr"
     path: ./provider.yaml
