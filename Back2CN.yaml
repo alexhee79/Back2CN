@@ -94,7 +94,7 @@ proxy-providers:
       url: https://www.xiaomi.cn
   P2:
     type: http
-    url: "https://klausvpn.posyao.com/clash/proxies?c=CN,HK"
+    url: "http://klausvpn.posyao.com/clash/proxies?c=CN,HK"
     path: klausvpn.posyao.com/provider-cn.yaml
     interval: 3600
     health-check:
