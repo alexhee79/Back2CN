@@ -26,7 +26,6 @@ proxy-groups:
      - P2
      - P3
      - P4
-     - P5
   - name: AUTOMATIC
     type: url-test
     url: 'https://www.xiaomi.cn'
@@ -37,7 +36,6 @@ proxy-groups:
      - P2
      - P3
      - P4
-     - P5
   - name: AUTO-LOAD-BALANCE
     type: load-balance
     url: 'https://www.xiaomi.cn'
@@ -48,7 +46,6 @@ proxy-groups:
      - P2
      - P3
      - P4
-     - P5
   - name: XIAOMI
     type: select
     proxies:
@@ -97,23 +94,14 @@ proxy-providers:
       url: https://www.xiaomi.cn
   P2:
     type: http
-    url: "https://proxypool.laowang.me/clash/proxies?c=CN,HK"
-    path: proxypool.laowang.me/provider-cn.yaml
+    url: "https://klausvpn.posyao.com/clash/proxies?c=CN,HK"
+    path: klausvpn.posyao.com/provider-cn.yaml
     interval: 3600
     health-check:
       enable: true
       interval: 300
       url: https://www.xiaomi.cn
   P3:
-    type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=CN,HK"
-    path: sspool.herokuapp.com/provider-cn.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      interval: 300
-      url: https://www.xiaomi.cn
-  P4:
     type: http
     url: "https://proxy.yiun.xyz/clash/proxies?c=CN,HK"
     path: proxy.yiun.xyz/provider-cn.yaml
@@ -122,9 +110,9 @@ proxy-providers:
       enable: true
       interval: 300
       url: https://www.xiaomi.cn
-  P5:
+  P4:
     type: http
-    url: "https://v1.mk/jwArVjS"
+    url: "https://suo.yt/GwvvLDr"
     path: ./provider.yaml
     interval: 3600
     health-check:
