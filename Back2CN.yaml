@@ -34,41 +34,28 @@ proxy-groups:
      - P1
      - P2
      - P3
-  - name: AUTO-LOAD-BALANCE
-    type: load-balance
-    url: 'https://www.xiaomi.cn'
-    interval: 300
-    tolerance: 100
-    use:
-     - P1
-     - P2
-     - P3
   - name: XIAOMI
     type: select
     proxies:
       - AUTOMATIC
-      - AUTO-LOAD-BALANCE
       - PROXY
       - GLOBAL-CONNECT
   - name: TUYA
     type: select
     proxies:
       - AUTOMATIC
-      - AUTO-LOAD-BALANCE
       - PROXY
       - GLOBAL-CONNECT
   - name: CHINA-MUSIC
     type: select
     proxies:
       - AUTOMATIC
-      - AUTO-LOAD-BALANCE
       - PROXY
       - GLOBAL-CONNECT
   - name: CHINA-IP
     type: select
     proxies: 
       - AUTOMATIC
-      - AUTO-LOAD-BALANCE
       - PROXY
       - GLOBAL-CONNECT
   - name: GLOBAL-CONNECT
@@ -78,12 +65,11 @@ proxy-groups:
       - REJECT
       - AUTOMATIC
       - PROXY
-      - AUTO-LOAD-BALANCE      
 proxy-providers:
   P1:
     type: http
-    url: "http://klausvpn.posyao.com/clash/proxies?c=CN,HK"
-    path: klausvpn.posyao.com/provider-cn.yaml
+    url: "https://suo.yt/o2sUHuP"
+    path: ./provider-cn.yaml
     interval: 3600
     health-check:
       enable: true
