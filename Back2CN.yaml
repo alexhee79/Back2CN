@@ -86,7 +86,7 @@ proxy-providers:
       url: https://www.xiaomi.cn
   P3:
     type: http
-    url: "https://suo.yt/GwvvLDr"
+    url: "https://suo.yt/8PLbfUg"
     path: ./provider.yaml
     interval: 3600
     health-check:
