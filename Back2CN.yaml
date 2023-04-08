@@ -68,8 +68,8 @@ proxy-groups:
 proxy-providers:
   P1:
     type: http
-    url: "https://suo.yt/o2sUHuP"
-    path: ./provider-cn.yaml
+    url: "https://suo.yt/8PLbfUg"
+    path: ./provider.yaml
     interval: 3600
     health-check:
       enable: true
@@ -86,7 +86,7 @@ proxy-providers:
       url: https://www.xiaomi.cn
   P3:
     type: http
-    url: "https://suo.yt/8PLbfUg"
+    url: "https://suo.yt/vixZPbw"
     path: ./provider.yaml
     interval: 3600
     health-check:
@@ -131,4 +131,4 @@ rules:
   
   # Others
   - GEOIP,CN,CHINA-IP
-  - MATCH,GLOBAL-CONNECT
+  - MATCH, DIRECT
