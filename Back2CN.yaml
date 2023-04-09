@@ -17,34 +17,15 @@ log-level: info
 external-controller: 127.0.0.1:9090
 
 dns:
-  enable: true
-  ipv6: false
-  listen: 0.0.0.0:53
-  enhanced-mode: redir-host
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - "*.lan"
-    - localhost.ptlogin2.qq.com
+  enabled: true
   nameserver:
-    - 223.5.5.5
-    - 180.76.76.76
     - 119.29.29.29
-    - 117.50.11.11
-    - 117.50.10.10
-    - 114.114.114.114
+    - 223.5.5.5
   fallback:
     - 8.8.8.8
-    - 1.1.1.1
-    - tls://dns.rubyfish.cn:853
+    - 8.8.4.4
     - tls://1.0.0.1:853
     - tls://dns.google:853
-    - https://dns.rubyfish.cn/dns-query
-    - https://cloudflare-dns.com/dns-query
-    - https://dns.google/dns-query
-  fallback-filter:
-    geoip: true
-    ipcidr:
-      - 240.0.0.0/4
 
 proxies:
 
@@ -54,7 +35,6 @@ proxy-groups:
     use:
      - P1
      - P2
-     - P3
   - name: AUTOMATIC
     type: url-test
     url: 'https://www.xiaomi.cn'
@@ -63,7 +43,6 @@ proxy-groups:
     use:
      - P1
      - P2
-     - P3
   - name: XIAOMI
     type: select
     proxies:
@@ -107,17 +86,8 @@ proxy-providers:
       url: https://www.xiaomi.cn
   P2:
     type: http
-    url: "https://proxy.yiun.xyz/clash/proxies?c=CN,HK"
+    url: "https://proxy.yiun.xyz/clash/proxies?c=CN"
     path: proxy.yiun.xyz/provider-cn.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      interval: 300
-      url: https://www.xiaomi.cn
-  P3:
-    type: http
-    url: "https://suo.yt/vixZPbw"
-    path: ./provider.yaml
     interval: 3600
     health-check:
       enable: true
