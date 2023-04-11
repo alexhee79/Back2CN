@@ -65,9 +65,9 @@ proxy-groups:
       - REJECT
       
 proxy-providers:
-  P1:
+  P1:a
     type: http
-    url: "https://suo.yt/8PLbfUg"
+    url: "https://suo.yt/DO1FmQV"
     path: ./provider.yaml
     interval: 3600
     health-check:
