@@ -9,12 +9,12 @@ external-controller: 127.0.0.1:9090
 proxies:
 
 proxy-groups:
-  - name: PROXY
+  - name: 🚀 PROXY
     type: select
     use:
      - P1
      - P2
-  - name: AUTOMATIC
+  - name: 🔄 AUTOMATIC
     type: url-test
     url: 'https://www.xiaomi.cn'
     interval: 300
@@ -22,7 +22,7 @@ proxy-groups:
     use:
      - P1
      - P2
-  - name: LOAD BALANCE
+  - name: ⚖️ LOAD BALANCE
     type: load-balance
     url: 'https://www.xiaomi.cn'
     interval: 300
@@ -30,34 +30,39 @@ proxy-groups:
     use:
       - P1
       - P2
-  - name: XIAOMI
+  - name: ❤️ XIAOMI
     type: select
     proxies:
       - AUTOMATIC
       - LOAD BALANCE
       - PROXY
       - DIRECT
-  - name: TUYA
+  - name: ♈ TUYA
     type: select
     proxies:
       - AUTOMATIC
       - LOAD BALANCE
       - PROXY
       - DIRECT
-  - name: CHINA-MUSIC
+  - name: 🎧 CHINA-MUSIC
     type: select
     proxies:
       - AUTOMATIC
       - LOAD BALANCE
       - PROXY
       - DIRECT
-  - name: CHINA-IP
+  - name: 🇨🇳 CHINA-IP
     type: select
     proxies: 
       - AUTOMATIC
       - LOAD BALANCE
       - PROXY
       - DIRECT
+  - name: 🛑 ADBLOCK
+    type: select
+    proxies: 
+      - DIRECT
+      - REJECT
       
 proxy-providers:
   P1:
@@ -83,9 +88,9 @@ rule-providers:
   Advertising:
     behavior: "classical"
     type: http
-    url: https://raw.githubusercontent.com/alexhee79/Back2CN/main/Advertising.yaml
+    url: https://raw.githubusercontent.com/alexhee79/Back2CN/main/ADBlock.yaml
     interval: 3600
-    path: ./Advertising.yaml
+    path: ./ADBlock.yaml
 
 rules:
   #GENERAL RULES  
@@ -94,6 +99,7 @@ rules:
   - DOMAIN-SUFFIX,imap,DIRECT
   - DOMAIN-KEYWORD,aria2,DIRECT
   - DOMAIN-SUFFIX,local,DIRECT
+  - RULE-SET,Advertising,🛑 ADBLOCK
   - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
   - IP-CIDR,192.9.0.0/16,DIRECT,no-resolve
   - IP-CIDR,192.10.0.0/16,DIRECT,no-resolve
@@ -103,28 +109,28 @@ rules:
   - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
 
   # XIAOMI
-  - DOMAIN-KEYWORD,xiaomi,XIAOMI
-  - DOMAIN-SUFFIX,mi.com,XIAOMI
-  - DOMAIN-SUFFIX,xiaomi.com,XIAOMI
-  - DOMAIN-SUFFIX,xiaomi.net,XIAOMI
-  - DOMAIN-SUFFIX,xiaomi.cn,XIAOMI
-  - DOMAIN-SUFFIX,xiaomicp.com,XIAOMI
-  - DOMAIN-SUFFIX,miwifi.com,XIAOMI
-  - DOMAIN-SUFFIX,iotcplatform.com,XIAOMI
+  - DOMAIN-KEYWORD,xiaomi,❤️ XIAOMI
+  - DOMAIN-SUFFIX,mi.com,❤️ XIAOMI
+  - DOMAIN-SUFFIX,xiaomi.com,❤️ XIAOMI
+  - DOMAIN-SUFFIX,xiaomi.net,❤️ XIAOMI
+  - DOMAIN-SUFFIX,xiaomi.cn,❤️ XIAOMI
+  - DOMAIN-SUFFIX,xiaomicp.com,❤️ XIAOMI
+  - DOMAIN-SUFFIX,miwifi.com,❤️ XIAOMI
+  - DOMAIN-SUFFIX,iotcplatform.com,❤️ XIAOMI
  
   #TUYA
-  - DOMAIN-KEYWORD,tuya,TUYA
-  - DOMAIN-KEYWORD,tuyacn,TUYA
-  - DOMAIN-KEYWORD,162.14.14.134,TUYA
+  - DOMAIN-KEYWORD,tuya,♈ TUYA
+  - DOMAIN-KEYWORD,tuyacn,♈ TUYA
+  - DOMAIN-KEYWORD,162.14.14.134,♈ TUYA
   
   # CHINA-MUSIC
-  - DOMAIN-SUFFIX,music.126.net,CHINA-MUSIC
-  - DOMAIN-SUFFIX,music.126.com,CHINA-MUSIC
-  - DOMAIN-SUFFIX,music.163.com,CHINA-MUSIC
-  - DOMAIN-SUFFIX,netease.com,CHINA-MUSIC
-  - DOMAIN-SUFFIX,music.qq.com,CHINA-MUSIC
-  - DOMAIN-SUFFIX,qq.com,CHINA-MUSIC
+  - DOMAIN-SUFFIX,music.126.net,🎧 CHINA-MUSIC
+  - DOMAIN-SUFFIX,music.126.com,🎧 CHINA-MUSIC
+  - DOMAIN-SUFFIX,music.163.com,🎧 CHINA-MUSIC
+  - DOMAIN-SUFFIX,netease.com,🎧 CHINA-MUSIC
+  - DOMAIN-SUFFIX,music.qq.com,🎧 CHINA-MUSIC
+  - DOMAIN-SUFFIX,qq.com,🎧 CHINA-MUSIC
   
   # Others
-  - GEOIP,CN,CHINA-IP
+  - GEOIP,CN,🇨🇳 CHINA-IP
   - MATCH,DIRECT
