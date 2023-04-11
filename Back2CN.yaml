@@ -33,30 +33,30 @@ proxy-groups:
   - name: ❤️ XIAOMI
     type: select
     proxies:
-      - AUTOMATIC
-      - LOAD BALANCE
-      - PROXY
+      - 🔄 AUTOMATIC
+      - ⚖️ LOAD BALANCE
+      - 🚀 PROXY
       - DIRECT
   - name: ♈ TUYA
     type: select
     proxies:
-      - AUTOMATIC
-      - LOAD BALANCE
-      - PROXY
+      - 🔄 AUTOMATIC
+      - ⚖️ LOAD BALANCE
+      - 🚀 PROXY
       - DIRECT
   - name: 🎧 CHINA-MUSIC
     type: select
     proxies:
-      - AUTOMATIC
-      - LOAD BALANCE
-      - PROXY
+      - 🔄 AUTOMATIC
+      - ⚖️ LOAD BALANCE
+      - 🚀 PROXY
       - DIRECT
   - name: 🇨🇳 CHINA-IP
     type: select
     proxies: 
-      - AUTOMATIC
-      - LOAD BALANCE
-      - PROXY
+      - 🔄 AUTOMATIC
+      - ⚖️ LOAD BALANCE
+      - 🚀 PROXY
       - DIRECT
   - name: 🛑 ADBLOCK
     type: select
