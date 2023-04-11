@@ -1,37 +1,10 @@
 # BacktoCN
-# port of HTTP
 port: 7890
-
-# port of SOCKS5
 socks-port: 7891
-
-# (HTTP and SOCKS5 in one port)
-# mixed-port: 7890
-
-# redir port for Linux and macOS
-# redir-port: 7892
-
 allow-lan: true
-mode: rule
+mode: Rule
 log-level: info
-external-controller: 127.0.0.1:9090
-
-dns:
-  enable: true
-  ipv6: false
-  listen: 0.0.0.0:53
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  nameserver:
-    - 8.8.8.8
-    - 1.1.1.1
-  fallback:
-    - 223.5.5.5
-    - 119.29.29.29
-  fallback-filter:
-    geoip: true
-    ipcidr:
-      - 240.0.0.0/4
+external-controller: :9090
 
 proxies:
 
@@ -43,7 +16,7 @@ proxy-groups:
      - P2
   - name: AUTOMATIC
     type: url-test
-    url: 'https://www.xiaomi.cn'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     tolerance: 100
     use:
@@ -51,7 +24,7 @@ proxy-groups:
      - P2
   - name: LOAD BALANCE
     type: load-balance
-    url: 'https://www.xiaomi.cn'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     strategy: round-robin
     use:
@@ -129,6 +102,8 @@ rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - RULE-SET,Advertising,REJECT
   - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,192.9.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,192.10.0.0/16,DIRECT,no-resolve
   - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
   - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
   - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
