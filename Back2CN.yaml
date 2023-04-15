@@ -51,7 +51,7 @@ proxy-groups:
       - ⚖️ LOAD BALANCE
       - 🚀 PROXY
       - DIRECT
-   - name: 🅰️ ALIBABA
+  - name: 🅰️ ALIBABA
     type: select
     proxies:
       - 🔄 AUTOMATIC
