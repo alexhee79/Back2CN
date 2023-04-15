@@ -109,6 +109,7 @@ rules:
   - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
 
   # XIAOMI
+  - IP-CIDR,8.214.89.135/32,❤️ XIAOMI
   - DOMAIN-KEYWORD,xiaomi,❤️ XIAOMI
   - DOMAIN-KEYWORD,mijia,❤️ XIAOMI
   - DOMAIN-SUFFIX,mi.com,❤️ XIAOMI
