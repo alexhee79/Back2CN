@@ -70,6 +70,11 @@ proxy-groups:
     proxies: 
       - DIRECT
       - REJECT
+  - name: 🌎 GLOBAL-CONNECT
+    type: select
+    proxies:
+      - DIRECT
+      - REJECT
       
 proxy-providers:
   P1:
@@ -144,4 +149,4 @@ rules:
   
   # Others
   - GEOIP,CN,🇨🇳 CHINA-IP
-  - MATCH,DIRECT
+  - MATCH, 🌎 GLOBAL-CONNECT
