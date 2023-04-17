@@ -79,7 +79,7 @@ proxy-groups:
 proxy-providers:
   P1:
     type: http
-    url: "https://sub.maoxiongnet.com/sub?target=clash&new_name=true&url=https%3A%2F%2Fsub.nicevpn.top%2Flong&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&include=CN&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false"
+    url: "https://suo.yt/ZhZJABm"
     path: ./provider.yaml
     interval: 3600
     health-check:
@@ -97,11 +97,11 @@ proxy-providers:
       url: https://www.xiaomi.cn
       
 rule-providers:
-  Ads:
+  BlockAds:
     behavior: "classical"
     type: http
-    url: https://raw.githubusercontent.com/alexhee79/Back2CN/main/ADBlock.yaml
-    interval: 3600
+    url: "https://raw.githubusercontent.com/alexhee79/Back2CN/main/ADBlock.yaml"
+    interval: 86400
     path: ./ADBlock.yaml
 
 rules:
@@ -111,7 +111,7 @@ rules:
   - DOMAIN-SUFFIX,imap,DIRECT
   - DOMAIN-KEYWORD,aria2,DIRECT
   - DOMAIN-SUFFIX,local,DIRECT
-  - RULE-SET,Ads,🛑 ADBLOCK
+  - RULE-SET,BlockAds,🛑 ADBLOCK
   - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
   - IP-CIDR,192.9.0.0/16,DIRECT,no-resolve
   - IP-CIDR,192.10.0.0/16,DIRECT,no-resolve
